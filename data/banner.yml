@@ -1,0 +1,17 @@
+####################### Banner #########################
+style: "style1 orient-left content-align-left image-position-right fullscreen"
+title : "Flowkeeper"
+subtitle: |
+  -- Plan your work and execute it.
+content : |
+    Flowkeeper is a <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> desktop timer for power users and professional teams.
+    It is a simple tool, which focuses on doing one thing well. It is Free Software with open source.
+buttons:
+  primary:
+    label : "Download"
+    link : "#download"
+  secondary:
+    label : "Contribute"
+    link : "#contribute"
+image : "images/fk-full-tilt.png"
+

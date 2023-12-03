@@ -1,0 +1,43 @@
+title : "Powerful Features"
+style: "style1 medium"
+items:
+  # feature item loop
+  - name : "Backlogs"
+    content : "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
+    style : "style2 major fa-gem"
+
+  # feature item loop
+  - name : "Progress Indicators"
+    content : "Flowkeeper's colorful progress indicator in system tray is instantly recognizable in a workspace."
+    style : "solid style2 major fa-save"
+    
+  # feature item loop
+  - name : "Offline Mode"
+    content : "Flowkeeper can store its data in plaintext files. It monitors them, so that you can sync your work across computers via OneDrive."
+    style : "solid style2 major fa-chart-bar"
+    
+  # feature item loop
+  - name : "Server Sync"
+    content : "Host a Flowkeeper Server or use flowkeeper.org to synchronize your work between all your devices in real time."
+    style : "solid style2 major fa-wifi"
+    
+  # feature item loop
+  - name : "Full History"
+    content : "Flowkeeper is designed around Event Sourcing pattern, which means that every event or action is logged for the future analysis."
+    style : "solid style2 major fa-cog"
+    
+  # feature item loop
+  - name : "Keyboard Shortcuts"
+    content : "You can use all Flowkeeper features without ever touching the mouse. The hotkeys are intuitive and configurable."
+    style : "style2 major fa-paper-plane"
+    
+  # feature item loop
+  - name : "Team Sync"
+    content : "Your entire team can use your Flowkeeper Server or flowkeeper.pro. Flowkeeper will then show their statuses."
+    style : "solid style2 major fa-desktop"
+    
+  # feature item loop
+  - name : "Data Encryption"
+    content : "Flowkeeper can encrypt your workitems, both in online and offline modes. Beware -- you will lose your data if you lose the key."
+    style : "solid style2 major fa-leaf"
+    

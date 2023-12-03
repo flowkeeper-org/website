@@ -1,0 +1,3 @@
+baseURL = 'https://flowkeeper.org/'
+languageCode = 'en-us'
+title = 'Flowkeeper'

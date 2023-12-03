@@ -1,0 +1,13 @@
+<!-- Downloads -->
+<section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
+    <div class="inner">
+        <h2>{{ .title }}</h2>
+        <p>{{ .content | safeHTML }}</p>
+        <!-- Downloads -->
+        <div class="index align-left">
+            {{ range .downloads }}
+                {{ partial "os" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>

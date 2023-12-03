@@ -1,0 +1,17 @@
+####################### Spotlight #########################
+style: "style1 orient-right content-align-left image-position-center"
+id: "usability"
+title : "Unmatched Usability"
+content: |
+  <ul>
+    <li>Configurable theme and fonts</li>
+    <li>All actions have keyboard shortcuts</li>
+    <li>Three timer visualization modes</li>
+    <li>Monitoring your progress in the System Tray</li>
+    <li>Nice music to get into resting mood quicker</li>
+    <li>A Qt6 app, not an Electron monstrosity</li>
+  </ul>
+button: 
+  label: "Watch Video"
+  link: "https://youtube.com"
+image: "images/flowkeeper-main-wide.png"

@@ -1,0 +1,15 @@
+####################### Spotlight #########################
+style: "style1 orient-right content-align-left image-position-center"
+title : "Flowkeeper Use Cases"
+content: |
+  <ul>
+    <li><strong>Getting Things Done</strong> - Flowkeeper reduces the effect of internal and external interruptions on focus and flow.</li>
+    <li><strong>Tasks Tracking</strong> - Take quick notes and create todos, which you can estimate and execute later.</li>
+    <li><strong>Teams Orchestration</strong> - Flowkeeper can sync your team cycles, increasing cohesion between teammates and further reducing interruptions.</li>
+    <li><strong>Preparing Timesheets</strong> - Export all your tasks for a given period to simplify reporting work progress.</li>
+    <li><strong>Continuous Improvement</strong> - Flowkeeper is like Apple Health for your Pomodoro Technique. You can use it to learn your own habits and improve your planning accordingly.</li>
+  </ul>
+image: "images/flowkeeper-main-wide.png"
+button: 
+  label: "Watch Video"
+  link: "https://youtube.com"

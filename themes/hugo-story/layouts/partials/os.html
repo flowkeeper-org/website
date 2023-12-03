@@ -1,0 +1,27 @@
+<!-- Downloads for an OS -->
+    <section>
+        <header>
+            <h3>{{ .os }}</h3>
+            <h5 style="margin-right: 25px">{{ .intro }}</h5>
+        </header>
+        <div class="content">
+            <ul class="alt">
+            {{ range .files }}
+                <li>
+                {{ if eq .type "link" }}
+                    <i class="fa-light fa-up-right-from-square"></i>
+                    <a href="{{ .href }}"> {{ .title }}</a>
+                {{ else if eq .type "file" }}
+                    <i class="fa-light fa-download"></i>
+                    <a href="{{ .href }}"> {{ .title }}</a>
+                    {{ if .size }}
+                    ({{ .size }})
+                    {{ end }}
+                {{ else if eq .type "shell" }}
+                    <pre><code>{{ .content }}</code></pre>
+                {{ end }}
+                </li>
+            {{ end }}
+            </ul>
+        </div>
+    </section>

@@ -1,0 +1,79 @@
+title : "Downloads"
+id: download
+content: |
+  We build Flowkeeper automatically thanks to GitHub Pipelines. Flowkeeper is Open Source software, so you can <a href="build.html">build it from source</a> yourself. You can also find <a href="#">previous releases</a> in GitHub.
+style: "style1 medium"
+downloads:
+  - os: "Windows"
+    intro: "Flowkeeper was tested on Windows 7, 10 and 11. It does NOT require admin rights to install and execute."
+    files:
+      - title: Flowkeeper in Microsoft Store
+        type: link
+        href: http://example.com
+      - title: Installer
+        size: 160MB
+        type: file
+        href: http://example.com
+      - title: Portable exe
+        size: 140MB
+        type: file
+        href: http://example.com
+      - title: Installation instructions
+        type: link
+        href: http://example.com
+  - os: "macOS"
+    intro: "We test Flowkeeper on an Intel MacBook Pro running macOS 10.15 and on an M1 iMac running macOS 11.0."
+    files:
+      - title: Flowkeeper in AppStore
+        type: link
+        href: http://example.com
+      - title: Installer for ARM
+        size: 175MB
+        type: file
+        href: http://example.com
+      - title: Installer for x86
+        size: 160MB
+        type: file
+        href: http://example.com
+      - title: Portable binary
+        size: 221MB
+        type: file
+        href: http://example.com
+      - title: Installation instructions
+        type: link
+        href: http://example.com
+      - type: shell
+        content: |
+          # Homebrew
+          $ sudo brew install flowkeeper-desktop
+  - os: "Linux"
+    intro: "We are testing Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL."
+    files:
+      - title: Flowkeeper on Flathub
+        type: link
+        href: http://example.com
+      - title: Flowkeeper on Snapcraft
+        type: link
+        href: http://example.com
+      - title: DEB package
+        size: 175MB
+        type: file
+        href: http://example.com
+      - title: RPM package
+        size: 160MB
+        type: file
+        href: http://example.com
+      - title: Portable binary
+        size: 180MB
+        type: file
+        href: http://example.com
+      - title: Installation instructions
+        type: link
+        href: http://example.com
+      - type: shell
+        content: |
+          # Debian and derivatives (Ubuntu, Mint, ...)
+          $ sudo apt install flowkeeper-desktop
+          
+          # Fedora and derivatives (CentOs, RHEL, ...)
+          $ sudo dnf install flowkeeper-desktop

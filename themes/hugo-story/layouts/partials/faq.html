@@ -1,0 +1,15 @@
+<!-- FAQ -->
+<section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
+    <div class="inner">
+        <h2>{{ .title }}</h2>
+        <!-- Questions -->
+        <div class="align-left">
+            <dl>
+            {{ range .questions }}
+                <dt>{{ .q | safeHTML }}</dt>
+                <dd><p>{{ .a | safeHTML }}</p></dd>
+            {{ end }}
+            </dl>
+        </div>
+    </div>
+</section>
