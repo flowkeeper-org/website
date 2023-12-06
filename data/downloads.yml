@@ -38,7 +38,7 @@ downloads:
       - title: Portable binary
         size: 221MB
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-linux
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-macos.zip
       - title: Installation instructions
         type: link
         href: http://example.com
@@ -66,7 +66,7 @@ downloads:
       - title: Portable binary
         size: 180MB
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-macos.zip
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-linux
       - title: Installation instructions
         type: link
         href: http://example.com
