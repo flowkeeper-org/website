@@ -3,22 +3,22 @@ style: "style1 medium"
 questions:
   - q: Why Another Pomodoro Timer?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      Unlike other timers on the market, Flowkeeper is designed to be: a). Free Software; b). Support team synchronization scenarios. It is not just a Pomodoro timer, but a robust and open work tracking platform.
   - q: How is it better than XYZ?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      Our unique killer feature is synchronizing Pomodoro cycles across teams of people. However, even if you use Flowkeeper alone, then most likely it: a). Supports other desktop OS better; b). Is more lightweight and performant; c). Is optimized for usability (keyboard shortcuts and advanced configuration); d). Is free as Freedom;
   - q: Is it really free?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      Yes, it is totally free, and is distributed under the terms of GPL license, similar to Linux Kernel or Git.
   - q: Is my data safe? What about privacy?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      We take user privacy seriously. Unless you synchronize your data via flowkeeper.org, Flowkeeper won't send any usage or other data anywhere. You might have noticed that this site doesn't have a Cookies banner -- it's because we don't use cookies for tracking you. When you use Offline mode, your data is stored in plaintext, unencrypted files on disk. You can see the filename in Settings and inspect its contents.
   - q: How can I report a bug or request a feature?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      File an Issue on our GitHub page: https://github.com/flowkeeper-org/fk-desktop/issues.
   - q: How can I synchronize my Flowkeeper across several devices?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      TODO
   - q: Is there a mobile version?
     a: |
-      Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
+      TODO

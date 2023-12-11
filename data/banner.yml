@@ -12,6 +12,6 @@ buttons:
     link : "#download"
   secondary:
     label : "Contribute"
-    link : "#contribute"
+    link : "https://github.com/flowkeeper-org/fk-desktop"
 image : "images/fk-full-tilt.png"
 
