@@ -18,7 +18,7 @@ questions:
       File an Issue on our GitHub page: https://github.com/flowkeeper-org/fk-desktop/issues.
   - q: How can I synchronize my Flowkeeper across several devices?
     a: |
-      TODO
+      There are two options. First of all, you can synchronize data using Flowkeeper Server, which you can host yourself or rely on the one running at flowkeeper.org. Alternatively, you can use the default file-based data backend and synchronize the data file via the likes of Dropbox, OneDrive or rclone. And if you enable "Watch changes" option, you can synchronize Flokkeeper events across all your devices in near real-time.
   - q: Is there a mobile version?
     a: |
-      TODO
+      At the moment there's no mobile version, but it can be created thanks to "Qt for Android" project. We will work on it once the desktop version is fully stable. AFAIK there's no PySide6 toolchain for iOS yet.
