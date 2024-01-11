@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.25s;
+        }
+
+        .accordion:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .workitems {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease-out;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        body, button {
+            font-family: sans-serif;
+            font-size: 11pt;
+        }
+
+        .wi-finished {
+            text-decoration: line-through;
+        }
+
+        .wi-running {
+            font-weight: bold;
+        }
+
+        .wi-add {
+            text-align: right;
+            color: gray;
+        }
+    </style>
+
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<script>
+    data = {};
+
+    const re = /([1-9][0-9]*)\s*,\s*([0-9: .\-+]+)\s*,\s*([\w\-.]+@(?:[\w-]+\.)+[\w-]{2,4})\s*:\s*([a-zA-Z]+)\s*\(\s*"((?:[^"\\]|\\"|\\\\)*)?"\s*(?:,\s*"((?:[^"\\]|\\"|\\\\)*)")?\s*(?:,\s*"((?:[^"\\]|\\"|\\\\)*)"\s*)*\)/;
+    const strategies = ['CreateBacklog', 'CreateWorkitem', 'RenameWorkitem', 'DeleteBacklog', 'DeleteWorkitem', 'RenameBacklog', 'CompleteWorkitem'];
+    let isCompleted = false;
+
+    function accordionClicked() {
+        const panel = this.nextElementSibling;
+        $('.accordion').each(function (i, obj) {
+            obj.classList.remove("active");
+        });
+        $('.workitems').each(function (i, obj) {
+            if (obj !== panel) {
+                obj.style.maxHeight = null;
+            }
+        });
+        this.classList.toggle("active");
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    }
+
+    function domAddBacklog(id, name) {
+        jQuery('<li>', {
+            id: `backlog-${id}`,
+            class: 'backlog',
+        }).prependTo('#backlogs');
+        jQuery('<button>', {
+            id: `accordion-${id}`,
+            class: 'accordion',
+            text: name,
+            click: accordionClicked,
+        }).appendTo(`#backlog-${id}`);
+        jQuery('<ul>', {
+            id: `items-${id}`,
+            class: 'workitems',
+        }).appendTo(`#backlog-${id}`);
+        jQuery('<li>', {
+            id: `add-${id}`,
+            class: `workitem wi-add`,
+            text: 'Add...',
+        }).appendTo(`#backlog-${id} > ul`);
+    }
+
+    function domAddWorkitem(id, name, state, backlogId) {
+        const addButton = $(`#add-${backlogId}`);
+        addButton.remove();
+        jQuery('<li>', {
+            id: `item-${id}`,
+            class: `workitem wi-${state}`,
+            text: name,
+        }).appendTo(`#backlog-${backlogId} > ul`);
+        addButton.appendTo(`#backlog-${backlogId} > ul`);
+        // TODO: Resize
+    }
+
+    function domDeleteWorkitem(id) {
+        $(`#item-${id}`).remove();
+    }
+
+    function domDeleteBacklog(id) {
+        $(`#backlog-${id}`).remove();
+    }
+
+    function domRenameWorkitem(id, name) {
+        $(`#item-${id}`).text(name);
+    }
+
+    function domRenameBacklog(id, name) {
+        $(`#accordion-${id}`).text(name);
+    }
+
+    function domCompleteWorkitem(id, state) {
+        $(`#item-${id}`).removeClass();
+        $(`#item-${id}`).addClass(`workitem`);
+        $(`#item-${id}`).addClass(`wi-${state}`);
+    }
+
+    function renderAll(backlogs) {
+        $("#backlogs").empty();
+        Object.values(backlogs).forEach(backlog => {
+            domAddBacklog(backlog.id, backlog.name);
+            Object.values(backlog.items).forEach(item => {
+                domAddWorkitem(item.id, item.name, item.state, backlog.id);
+            });
+        });
+    }
+
+    function parse(s) {
+        if (s.trim().length === 0 || s.startsWith('#')) {
+            return null;
+        }
+        if (s === 'ReplayCompleted()') {
+            isCompleted = true;
+            renderAll(data);
+            return null;
+        }
+        const tokens = re.exec(s);
+        if (tokens) {
+            const name = tokens[4];
+            if (!strategies.includes(name)) {
+                return null;
+            }
+            const seq = parseInt(tokens[1])
+            const when = tokens[2]
+            const who = tokens[3]
+            const params = tokens.slice(5).filter(p => !!p).map(p => p.replace('\\"', '"').replace('\\\\', '\\'));
+            return {
+                "name": name,
+                "seq": seq,
+                "when": when,
+                "who": who,
+                "params": params,
+            };
+        } else {
+            throw new Error('Wrong syntax: ' + s);
+        }
+    }
+
+    function apply(s) {
+        let id = '';
+        let name = ''
+        let parent = '';
+        let state = '';
+        let found = false;
+        switch (s.name) {
+            case 'CreateBacklog':
+                id = s.params[0];
+                name = s.params[1];
+                if (data[id]) {
+                    throw new Error(`Attempt to create a duplicate backlog ${id}`);
+                }
+                data[id] = {
+                    id: id,
+                    name: name,
+                    when: s.when,
+                    items: {},
+                };
+                if (isCompleted) {
+                    domAddBacklog(id, name);  // Render the change immediately
+                }
+                break;
+            case 'RenameBacklog':
+                id = s.params[0];
+                name = s.params[1];
+                if (!data[id]) {
+                    throw new Error(`Attempt to rename a non-existent backlog ${id}`);
+                }
+                data[id].name = name;
+                if (isCompleted) {
+                    domRenameBacklog(id, name);  // Render the change immediately
+                }
+                break;
+            case 'DeleteBacklog':
+                id = s.params[0];
+                if (!data[id]) {
+                    throw new Error(`Attempt to delete a non-existent backlog ${id}`);
+                }
+                delete data[id];
+                if (isCompleted) {
+                    domDeleteBacklog(id);  // Render the change immediately
+                }
+                break;
+            case 'CreateWorkitem':
+                id = s.params[0];
+                parent = s.params[1];
+                name = s.params[2];
+                if (!data[parent]) {
+                    throw new Error(`Attempt to create a work item in a non-existent backlog ${parent}`);
+                }
+                if (data[parent].items[id]) {
+                    throw new Error(`Attempt to create a duplicate work item ${id}`);
+                }
+                data[parent].items[id] = {
+                    id: id,
+                    parent: parent,
+                    name: name,
+                    when: s.when,
+                    state: 'new',
+                };
+                if (isCompleted) {
+                    domAddWorkitem(id, name, 'new', parent);  // Render the change immediately
+                }
+                break;
+            case 'RenameWorkitem':
+                id = s.params[0];
+                name = s.params[1];
+                found = false;
+                Object.values(data).forEach(backlog => {
+                    Object.values(backlog.items).forEach(item => {
+                        if (item.id === id) {
+                            item.name = name;
+                            found = true;
+                        }
+                    });
+                });
+                if (!found) {
+                    throw new Error(`Attempt to rename a non-existent work item ${id}`);
+                }
+                if (isCompleted) {
+                    domRenameWorkitem(id, name);  // Render the change immediately
+                }
+                break;
+            case 'DeleteWorkitem':
+                id = s.params[0];
+                found = false;
+                Object.values(data).forEach(backlog => {
+                    Object.values(backlog.items).forEach(item => {
+                        if (item.id === id) {
+                            delete data[item.parent].items[id];
+                            found = true;
+                        }
+                    });
+                });
+                if (!found) {
+                    throw new Error(`Attempt to delete a non-existent work item ${id}`);
+                }
+                if (isCompleted) {
+                    domDeleteWorkitem(id);  // Render the change immediately
+                }
+                break;
+            case 'CompleteWorkitem':
+                id = s.params[0];
+                state = s.params[1];
+                found = false;
+                Object.values(data).forEach(backlog => {
+                    Object.values(backlog.items).forEach(item => {
+                        if (item.id === id) {
+                            item.state = state;
+                            found = true;
+                        }
+                    });
+                });
+                if (!found) {
+                    throw new Error(`Attempt to complete a non-existent work item ${id}`);
+                }
+                if (isCompleted) {
+                    domCompleteWorkitem(id, state);  // Render the change immediately
+                }
+                break;
+            default:
+                throw new Error('Unexpected strategy type: ' + s.name);
+        }
+    }
+
+    if ("WebSocket" in window) {
+        const ws = new WebSocket("wss://app.flowkeeper.org");
+        ws.onopen = function () {
+            const email = prompt('Your email address');
+            const password = prompt('Your password');
+            ws.send(`1, 2024-01-08 21:34:27.494460+00:00, admin@local.host: Authenticate("${email}", "${password}")`);
+            ws.send(`2, 2024-01-08 21:34:27.494460+00:00, admin@local.host: Replay("0", "")`);
+        };
+        ws.onmessage = function (evt) {
+            const received_msg = evt.data;
+            received_msg.split('\n').forEach(s => {
+                const parsed = parse(s);
+                if (parsed) {
+                    apply(parsed);
+                }
+            });
+        };
+        ws.onclose = function () {
+            console.log("Connection is closed");
+        };
+    } else {
+        console.log("WebSocket NOT supported by your Browser!");
+    }
+</script>
+
+<ul id="backlogs"></ul>
+
+</body>
+</html>
+
+			  
