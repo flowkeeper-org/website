@@ -11,7 +11,7 @@
 				const name = asset['name'].replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
 				const size = asset['size'];
 				const count = asset['download_count'];
-				$(`#link-${name}`).href(url);
+				$(`#link-${name}`).attr('href', url);
 				let sizeText = `${Math.round(size / 1024 / 1024)}MB`;
 				if (count > 10) {
 					sizeText += `, ${count} downloads`;
