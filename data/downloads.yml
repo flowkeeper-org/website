@@ -11,11 +11,13 @@ downloads:
         #type: link
         #href: http://example.com
       - title: Installer
-        size: 61MB
+        asset: setup.exe
+        size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
       - title: Portable exe
-        size: 60MB
+        asset: Flowkeeper.exe
+        size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.exe
       #- title: Installation instructions
@@ -36,7 +38,8 @@ downloads:
         #type: file
         #href: http://example.com
       - title: DMG installer
-        size: 59MB
+        asset: Flowkeeper.dmg
+        size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.dmg
       #- title: Installation instructions
@@ -64,7 +67,8 @@ downloads:
         #type: file
         #href: http://example.com
       - title: Portable binary
-        size: 88MB
+        asset: flowkeeper-linux
+        size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-linux
       #- title: Installation instructions
@@ -74,6 +78,6 @@ downloads:
         #content: |
           #Debian and derivatives (Ubuntu, Mint, ...)
           #$ sudo apt install flowkeeper-desktop
-          
+
           #Fedora and derivatives (CentOs, RHEL, ...)
           #$ sudo dnf install flowkeeper-desktop

@@ -13,9 +13,9 @@
                     <a href="{{ .href }}"> {{ .title }}</a>
                 {{ else if eq .type "file" }}
                     <i class="fa-light fa-download"></i>
-                    <a href="{{ .href }}"> {{ .title }}</a>
+                    <a id="link-{{ .asset }}" href="{{ .href }}"> {{ .title }}</a>
                     {{ if .size }}
-                    ({{ .size }})
+                    <span id="size-{{ .asset }}">({{ .size }})</span>
                     {{ end }}
                 {{ else if eq .type "shell" }}
                     <pre><code>{{ .content }}</code></pre>
