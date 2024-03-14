@@ -11,12 +11,12 @@ downloads:
         #type: link
         #href: http://example.com
       - title: Installer
-        asset: setup.exe
+        asset: setup-exe
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
       - title: Portable exe
-        asset: Flowkeeper.exe
+        asset: flowkeeper-exe
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.exe
@@ -38,7 +38,7 @@ downloads:
         #type: file
         #href: http://example.com
       - title: DMG installer
-        asset: Flowkeeper.dmg
+        asset: flowkeeper-dmg
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.dmg
