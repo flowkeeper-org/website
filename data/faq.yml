@@ -3,10 +3,10 @@ style: "style1 medium"
 questions:
   - q: Why Another Pomodoro Timer?
     a: |
-      Unlike other timers on the market, Flowkeeper is designed to be: a). Free Software; b). Support team synchronization scenarios. It is not just a Pomodoro timer, but a robust and open work tracking platform.
+      Unlike other timers on the market, Flowkeeper is designed to be: a). Free Software; b). Cross-platform; b). Work in a professional environment, i.e. on the Desktop. It is not just a Pomodoro timer, but a robust and open work tracking platform.
   - q: How is it better than XYZ?
     a: |
-      Our unique killer feature is synchronizing Pomodoro cycles across teams of people. However, even if you use Flowkeeper alone, then most likely it: a). Supports other desktop OS better; b). Is more lightweight and performant; c). Is optimized for usability (keyboard shortcuts and advanced configuration); d). Is free as Freedom;
+      Compared on XYZ, Flowkeeper likely: a). Supports other desktop OS better; b). Is more lightweight and performant; c). Is optimized for usability (keyboard shortcuts and advanced configuration); d). Is free as Freedom;
   - q: Is it really free?
     a: |
       Yes, it is totally free, and is distributed under the terms of GPL license, similar to Linux Kernel or Git.
@@ -22,3 +22,11 @@ questions:
   - q: Is there a mobile version?
     a: |
       At the moment there's no mobile version, but it can be created thanks to "Qt for Android" project. We will work on it once the desktop version is fully stable. AFAIK there's no PySide6 toolchain for iOS yet.
+      Alternatively, you can try using the web client deployed at app.flowkeeper.org. It is in a very early BETA stage and has more limitations and bugs than features. We are actively improving it, but as for now
+      we cannot recommend using it as-is. If you feel brave though -- try to login with your Google account -- this will create a new flowkeeper.org user record for you automatically.
+  - q: When I try to install it, Windows warns me that this software may be malicious, is not signed, etc. Is it safe to install?
+    a: |
+      As a general rule, you should never run programs that you downloaded from Internet (just like you do with Flowkeeper). Whether you trust this one or not is your personal choice.
+      If you don't feel safe, you are welcome to compile your own version of Flowkeeper -- it's easy and is documented on our GitHub project page at https://github.com/flowkeeper-org/fk-desktop/.
+      In the meantime we are working on distributing Flowkeeper through more trustworthy channels, i.e. Windows Store, Apple App Store, Flatpak, etc. The first item on our agenda is getting our
+      executables and installers signed using a trusted certificate.

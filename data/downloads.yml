@@ -1,4 +1,4 @@
-title : "Downloads"
+title : "Download Flowkeeper"
 id: download
 content: |
   We build Flowkeeper automatically thanks to GitHub Pipelines. Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself. You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> in GitHub.

@@ -2,6 +2,7 @@
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2 id="downloads-title">{{ .title }}</h2>
+        <h3 id="downloads-subtitle">The latest release</h3>
         <p>{{ .content | safeHTML }}</p>
         <!-- Downloads -->
         <div class="index align-left">
