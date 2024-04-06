@@ -68,10 +68,10 @@ downloads:
         #type: file
         #href: http://example.com
       - title: All-in-one binary
-        asset: flowkeeper
+        asset: Flowkeeper
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper
       - title: Portable archive
         asset: flowkeeper.tar.gz
         size: N/A
