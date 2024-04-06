@@ -59,7 +59,7 @@ downloads:
         #type: link
         #href: http://example.com
       - title: DEB package
-        asset: flowkeeper.deb
+        asset: flowkeeper-deb
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.deb
@@ -68,12 +68,12 @@ downloads:
         #type: file
         #href: http://example.com
       - title: All-in-one binary
-        asset: Flowkeeper
+        asset: flowkeeper
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper
       - title: Portable archive
-        asset: flowkeeper.tar.gz
+        asset: flowkeeper-tar-gz
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.tar.gz
