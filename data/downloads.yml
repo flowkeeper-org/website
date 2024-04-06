@@ -58,19 +58,25 @@ downloads:
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
-      #- title: DEB package
-        #size: 175MB
-        #type: file
-        #href: http://example.com
+      - title: DEB package
+        asset: flowkeeper.deb
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.deb
       #- title: RPM package
         #size: 160MB
         #type: file
         #href: http://example.com
-      - title: Portable binary
-        asset: flowkeeper-linux
+      - title: All-in-one binary
+        asset: flowkeeper
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-linux
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper
+      - title: Portable archive
+        asset: flowkeeper.tar.gz
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.tar.gz
       #- title: Installation instructions
         #type: link
         #href: http://example.com
