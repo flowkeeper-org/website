@@ -3,30 +3,23 @@ style: "style1 medium"
 questions:
   - q: Why Another Pomodoro Timer?
     a: |
-      Unlike other timers on the market, Flowkeeper is designed to be: a). Free Software; b). Cross-platform; b). Work in a professional environment, i.e. on the Desktop. It is not just a Pomodoro timer, but a robust and open work tracking platform.
+      Unlike other timers on the market, Flowkeeper is designed to be: a). Free Software; b). Cross-platform; c). Work natively on a Desktop. It is not just a Pomodoro timer, but a robust, open and secure work tracking platform.
   - q: How is it better than XYZ?
     a: |
-      Compared on XYZ, Flowkeeper likely: a). Supports other desktop OS better; b). Is more lightweight and performant; c). Is optimized for usability (keyboard shortcuts and advanced configuration); d). Is free as Freedom;
+      Compared on XYZ, Flowkeeper likely: a). Supports different desktop OS better; b). Is more lightweight and performant (it's not based on Electron); c). Is optimized for usability (keyboard shortcuts and advanced configuration); d). Is free as Freedom; e). Supports end-to-end data encryption (you own the encryption keys);
   - q: Is it really free?
     a: |
       Yes, it is totally free, and is distributed under the terms of GPL license, similar to Linux Kernel or Git.
   - q: Is my data safe? What about privacy?
     a: |
-      We take user privacy seriously. Unless you synchronize your data via flowkeeper.org, Flowkeeper won't send any usage or other data anywhere. You might have noticed that this site doesn't have a Cookies banner -- it's because we don't use cookies for tracking you. When you use Offline mode, your data is stored in plaintext, unencrypted files on disk. You can see the filename in Settings and inspect its contents.
+      We take user privacy seriously. Unless you synchronize your data via flowkeeper.org, Flowkeeper won't send any usage or other data anywhere. You might have noticed that this site doesn't have a Cookies banner -- it's because we don't use cookies for tracking you. When you use Offline mode (the default behavior), your data is stored in a plaintext, unencrypted file on your disk. You can see the filename in Settings and inspect its contents. If you choose to synchronize
+      your data with Flowkeeper.org, the application forces you to define a key, which is used to encrypt and decrypt data on your computer. Flowkeeper Server doesn't have that key, and thus cannot decrypt your data.
   - q: How can I report a bug or request a feature?
     a: |
       File an Issue on our GitHub page: https://github.com/flowkeeper-org/fk-desktop/issues.
   - q: How can I synchronize my Flowkeeper across several devices?
     a: |
-      There are two options. First of all, you can synchronize data using Flowkeeper Server, which you can host yourself or rely on the one running at flowkeeper.org. Alternatively, you can use the default file-based data backend and synchronize the data file via the likes of Dropbox, OneDrive or rclone. And if you enable "Watch changes" option, you can synchronize Flokkeeper events across all your devices in near real-time.
+      There are two options. First of all, you can synchronize data using Flowkeeper Server, which you can host yourself or rely on the one running at flowkeeper.org. Alternatively, you can use the default file-based data backend and synchronize the data file via the likes of Dropbox, OneDrive or rclone. And if you enable "Watch changes" option, you can synchronize Flokkeeper events across all your devices in near real-time. Flowkeeper.org requires end-to-end encryption, it won't allow Flowkeeper application store data in unencrypted form.
   - q: Is there a mobile version?
     a: |
-      At the moment there's no mobile version, but it can be created thanks to "Qt for Android" project. We will work on it once the desktop version is fully stable. AFAIK there's no PySide6 toolchain for iOS yet.
-      Alternatively, you can try using the web client deployed at app.flowkeeper.org. It is in a very early BETA stage and has more limitations and bugs than features. We are actively improving it, but as for now
-      we cannot recommend using it as-is. If you feel brave though -- try to login with your Google account -- this will create a new flowkeeper.org user record for you automatically.
-  - q: When I try to install it, Windows warns me that this software may be malicious, is not signed, etc. Is it safe to install?
-    a: |
-      As a general rule, you should never run programs that you downloaded from Internet (just like you do with Flowkeeper). Whether you trust this one or not is your personal choice.
-      If you don't feel safe, you are welcome to compile your own version of Flowkeeper -- it's easy and is documented on our GitHub project page at https://github.com/flowkeeper-org/fk-desktop/.
-      In the meantime we are working on distributing Flowkeeper through more trustworthy channels, i.e. Windows Store, Apple App Store, Flatpak, etc. The first item on our agenda is getting our
-      executables and installers signed using a trusted certificate.
+      Check out https://app.flowkeeper.org and try to add it to your phone as a PWA. This app is still in its BETA stage, but you can use it to manage your backlogs and work items.

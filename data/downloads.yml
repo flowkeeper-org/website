@@ -1,11 +1,13 @@
 title : "Download Flowkeeper"
 id: download
 content: |
-  We build Flowkeeper automatically thanks to GitHub Pipelines. Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself. You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> in GitHub.
+  We build Flowkeeper automatically thanks to GitHub Pipelines. 
+  Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself. 
+  You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> in GitHub.
 style: "style1 medium"
 downloads:
   - os: "Windows"
-    intro: "Flowkeeper was tested on Windows 7, 10 and 11. It does NOT require admin rights to install and execute."
+    intro: "Flowkeeper is tested on Windows 10, 11 and Server 2019. It does NOT require admin rights to install and execute."
     files:
       #- title: Flowkeeper in Microsoft Store
         #type: link
@@ -50,7 +52,7 @@ downloads:
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
   - os: "Linux"
-    intro: "We are testing Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL."
+    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL. As of June 2024, there's a known issue related to accessing the keychain, which may prevent Flowkeeper from working in your specific setup. This will be mitigated in the upcoming version 0.6.x."
     files:
       #- title: Flowkeeper on Flathub
         #type: link
