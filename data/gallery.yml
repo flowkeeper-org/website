@@ -1,86 +1,100 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
 content: |
-  Some of our favorite features in Flowkeeper v0.4.x.
+  Those screenshots were generated on Kubuntu 20.04 (XOrg, KDE Plasma 5) for the latest version of Flowkeeper.
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
-    image: "images/gallery/fulls/fk-backlogs.jpg"
-    thumb: "images/gallery/thumbs/fk-backlogs.jpg"
+    image: "images/gallery/fulls/01-backlog-full.jpg"
+    thumb: "images/gallery/thumbs/01-backlog-full.jpg"
     button: "Details"
 
   - title: "Progress Indicators"
     content: "Flowkeeper's colorful progress indicator in system tray is instantly recognizable in a workspace."
-    image: "images/gallery/fulls/fk-progress.jpg"
-    thumb: "images/gallery/thumbs/fk-progress.jpg"
+    image: "images/gallery/fulls/02-pomodoro-full.jpg"
+    thumb: "images/gallery/thumbs/02-pomodoro-full.jpg"
     button: "Details"
 
   - title: "Offline Mode"
     content: |
       Flowkeeper can store its data in plaintext files, which you can copy, backup and edit yourself, if necessary.
-      It can also monitor those files for changes, so that you can easily sync your work across computers if you store this file in OneDrive, Dropbox, etc.
       This is the default mode.
-    image: "images/gallery/fulls/fk-offline.jpg"
-    thumb: "images/gallery/thumbs/fk-offline.jpg"
+    image: "images/gallery/fulls/03-settings-connection-offline-full.jpg"
+    thumb: "images/gallery/thumbs/03-settings-connection-offline-full.jpg"
     button: "Details"
 
   - title: "Server Sync"
     content: "Host your own private Flowkeeper Server to synchronize your work between all your devices in real time."
-    image: "images/gallery/fulls/fk-self-hosted.jpg"
-    thumb: "images/gallery/thumbs/fk-self-hosted.jpg"
+    image: "images/gallery/fulls/04-settings-connection-self-hosted-full.jpg"
+    thumb: "images/gallery/thumbs/04-settings-connection-self-hosted-full.jpg"
     button: "Details"
 
   - title: "Flowkeeper.org Sync"
     content: |
       Use flowkeeper.org (BETA) to synchronize your work between all your devices in real time. You can register and 
       authenticate with your Google credentials, or request a new ad-hoc account.
-    image: "images/gallery/fulls/fk-flowkeeper-org-1.jpg"
-    thumb: "images/gallery/thumbs/fk-flowkeeper-org-1.jpg"
-    button: "Details"
-
-  - title: "Full History"
-    content: "Flowkeeper is designed around Event Sourcing pattern, which means that every event or action is logged for the future analysis."
-    image: "images/gallery/fulls/fk-events.jpg"
-    thumb: "images/gallery/thumbs/fk-events.jpg"
+    image: "images/gallery/fulls/05-settings-connection-flowkeeper-org-full.jpg"
+    thumb: "images/gallery/thumbs/05-settings-connection-flowkeeper-org-full.jpg"
     button: "Details"
 
   - title: "Keyboard Shortcuts"
     content: "You can use all Flowkeeper features without ever touching the mouse. The hotkeys are intuitive and configurable."
-    image: "images/gallery/fulls/fk-shortcuts.jpg"
-    thumb: "images/gallery/thumbs/fk-shortcuts.jpg"
+    image: "images/gallery/fulls/06-shortcuts-full.jpg"
+    thumb: "images/gallery/thumbs/06-shortcuts-full.jpg"
     button: "Details"
 
   - title: "Configurable Audio"
     content: |
       Flowkeeper ticks and dings just like a real kitchen times. In addition to that, you can configure some melody to play while 
       you should be resting -- this quickly creates a strong reflex to take a pause.
-    image: "images/gallery/fulls/fk-sounds.jpg"
-    thumb: "images/gallery/thumbs/fk-sounds.jpg"
+    image: "images/gallery/fulls/07-settings-audio-full.jpg"
+    thumb: "images/gallery/thumbs/07-settings-audio-full.jpg"
     button: "Details"
 
-  - title: "UI Themes"
-    content: "Flowkeeper supports three UI themes -- Dark, Light and Mixed (default). Most of the screenshots on this website use the Mixed theme."
-    image: "images/gallery/fulls/fk-themes.jpg"
-    thumb: "images/gallery/thumbs/fk-themes.jpg"
+  - title: "Dark Theme"
+    content: "Every app should have a dark theme!"
+    image: "images/gallery/fulls/08-dark-theme-full.jpg"
+    thumb: "images/gallery/thumbs/08-dark-theme-full.jpg"
     button: "Details"
 
-  - title: "Eye Candy"
+  - title: "Light Theme"
+    content: "The light theme for the purists."
+    image: "images/gallery/fulls/09-light-theme-full.jpg"
+    thumb: "images/gallery/thumbs/09-light-theme-full.jpg"
+    button: "Details"
+
+  - title: "Custom Theme"
     content: "You can customize Flowkeeper look and feel, including window layout, background and fonts."
-    image: "images/gallery/fulls/fk-custom.jpg"
-    thumb: "images/gallery/thumbs/fk-custom.jpg"
+    image: "images/gallery/fulls/10-customized-full.jpg"
+    thumb: "images/gallery/thumbs/10-customized-full.jpg"
     button: "Details"
 
-  - title: "Multi-platform"
-    content: "Flowkeeper runs on Windows 10 and 11, on macOS (x86 and ARM) and on any modern Linux which supports Qt6."
-    image: "images/gallery/fulls/fk-windows.jpg"
-    thumb: "images/gallery/thumbs/fk-windows.jpg"
+  - title: "Export"
+    content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
+    image: "images/gallery/fulls/12-export-full.jpg"
+    thumb: "images/gallery/thumbs/12-export-full.jpg"
     button: "Details"
 
-  - title: "Web Interface"
-    content: |
-      Flowkeeper.org (this website) also provides a web UI (try app.flowkeeper.org), which allows accessing Flowkeeper 
-      from your mobile phone, for example. This site is in its early BETA mode. Its functionality is severely limited,
-      and its quality is nowhere near as good as the desktop client... yet.
-    image: "images/gallery/fulls/fk-web.jpg"
-    thumb: "images/gallery/thumbs/fk-web.jpg"
+  - title: "Import"
+    content: "You can import Flowkeeper data (event sequence)."
+    image: "images/gallery/fulls/11-import-full.jpg"
+    thumb: "images/gallery/thumbs/11-import-full.jpg"
+    button: "Details"
+
+  - title: "Stats -- Week"
+    content: "Flowkeeper is like Apple Health for your Pomodoro Technique. This is the default view."
+    image: "images/gallery/fulls/13-stats-week-full.jpg"
+    thumb: "images/gallery/thumbs/13-stats-week-full.jpg"
+    button: "Details"
+
+  - title: "Stats -- Month"
+    content: "You can see how your are progressing through the last 30 days."
+    image: "images/gallery/fulls/14-stats-month-full.jpg"
+    thumb: "images/gallery/thumbs/14-stats-month-full.jpg"
+    button: "Details"
+
+  - title: "Stats -- Year"
+    content: "Track your long-term Pomodoro Technique progress and success."
+    image: "images/gallery/fulls/15-stats-year-full.jpg"
+    thumb: "images/gallery/thumbs/15-stats-year-full.jpg"
     button: "Details"
