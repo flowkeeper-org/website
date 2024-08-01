@@ -32,9 +32,9 @@ items:
     style : "style2 major fa-paper-plane"
     
   # feature item loop
-  - name : "Team Sync"
-    content : "Your entire team can use your Flowkeeper Server or flowkeeper.pro. Flowkeeper will then show their statuses."
-    style : "solid style2 major fa-desktop"
+#  - name : "Team Sync"
+#    content : "Your entire team can use your Flowkeeper Server or flowkeeper.pro. Flowkeeper will then show their statuses."
+#    style : "solid style2 major fa-desktop"
     
   # feature item loop
   - name : "Data Encryption"

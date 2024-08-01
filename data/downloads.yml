@@ -26,7 +26,7 @@ downloads:
         #type: link
         #href: http://example.com
   - os: "macOS"
-    intro: "We test Flowkeeper on an Intel MacBook Pro running macOS 10.15 and on an M1 iMac running macOS 11.0."
+    intro: "We test Flowkeeper on an Intel MacBook Pro running macOS Ventura 13.x and on an M1 iMac running the latest macOS Sonoma 14.x."
     files:
       #- title: Flowkeeper in AppStore
         #type: link
@@ -52,7 +52,7 @@ downloads:
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
   - os: "Linux"
-    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL. As of June 2024, there's a known issue related to accessing the keychain, which may prevent Flowkeeper from working in your specific setup. This will be mitigated in the upcoming version 0.6.x."
+    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL."
     files:
       #- title: Flowkeeper on Flathub
         #type: link
