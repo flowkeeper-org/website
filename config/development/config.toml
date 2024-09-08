@@ -38,11 +38,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 
 [Params.social]
   github = "https://github.com/flowkeeper-org/fk-desktop"
-#  twitter = "https://twitter.com/caressofsteel_"
   email = "contact@flowkeeper.org"
-#  instagram = "https://instagram.com"
-#  linkedin = "https://linkedin.com"
-#  telegram = "https://telegram.org"
 
 [Params.asset]
   fontawesome_css = ["css/fontawesome-all.min.css"]
