@@ -48,12 +48,6 @@ pictures:
     thumb: "images/gallery/thumbs/09-light-theme-full.jpg"
     button: "Details"
 
-  - title: "Custom Theme"
-    content: "You can customize Flowkeeper look and feel, including window layout, background and fonts."
-    image: "images/gallery/fulls/10-customized-full.jpg"
-    thumb: "images/gallery/thumbs/10-customized-full.jpg"
-    button: "Details"
-
   - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
     image: "images/gallery/fulls/12-export-full.jpg"
@@ -76,4 +70,10 @@ pictures:
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
     image: "images/gallery/fulls/17-backlog-windows-full.jpg"
     thumb: "images/gallery/thumbs/17-backlog-windows-full.jpg"
+    button: "Details"
+
+  - title: "macOS Support"
+    content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on macOS 14.5."
+    image: "images/gallery/fulls/20-main-dark-macos-full.jpg"
+    thumb: "images/gallery/thumbs/20-main-dark-macos-full.jpg"
     button: "Details"
