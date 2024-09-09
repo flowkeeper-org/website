@@ -54,22 +54,10 @@ pictures:
     thumb: "images/gallery/thumbs/10-customized-full.jpg"
     button: "Details"
 
-  - title: "Export"
+  - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
     image: "images/gallery/fulls/12-export-full.jpg"
     thumb: "images/gallery/thumbs/12-export-full.jpg"
-    button: "Details"
-
-  - title: "Import"
-    content: "You can import Flowkeeper data (event sequence)."
-    image: "images/gallery/fulls/11-import-full.jpg"
-    thumb: "images/gallery/thumbs/11-import-full.jpg"
-    button: "Details"
-
-  - title: "Stats -- Week"
-    content: "Flowkeeper is like Apple Health for your Pomodoro Technique. This is the default view."
-    image: "images/gallery/fulls/13-stats-week-full.jpg"
-    thumb: "images/gallery/thumbs/13-stats-week-full.jpg"
     button: "Details"
 
   - title: "Stats -- Month"
@@ -78,8 +66,14 @@ pictures:
     thumb: "images/gallery/thumbs/14-stats-month-full.jpg"
     button: "Details"
 
-  - title: "Stats -- Year"
-    content: "Track your long-term Pomodoro Technique progress and success."
-    image: "images/gallery/fulls/15-stats-year-full.jpg"
-    thumb: "images/gallery/thumbs/15-stats-year-full.jpg"
+  - title: "Work Summary"
+    content: "Generate a summary of the work you did and export it as a Markdown or CSV. It's a useful feature for filling timesheets."
+    image: "images/gallery/fulls/16-work-summary-full.jpg"
+    thumb: "images/gallery/thumbs/16-work-summary-full.jpg"
+    button: "Details"
+
+  - title: "Windows Support"
+    content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
+    image: "images/gallery/fulls/17-backlog-windows-full.jpg"
+    thumb: "images/gallery/thumbs/17-backlog-windows-full.jpg"
     button: "Details"
