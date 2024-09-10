@@ -70,6 +70,11 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.deb
+      - title: DEB package for legacy systems, e.g. Ubuntu 20.04 or Debian 11
+        asset: flowkeeper-legacy-deb
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-legacy.deb
       #- title: RPM package
         #size: 160MB
         #type: file
@@ -79,11 +84,21 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper
+      - title: All-in-one binary for legacy systems, e.g. Ubuntu 20.04, RHEL 8 or 9, Debian 11, ...
+        asset: flowkeeper-legacy
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-legacy
       - title: Portable archive
         asset: flowkeeper-tar-gz
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.tar.gz
+      - title: Portable archive for legacy systems, e.g. Ubuntu 20.04, RHEL 8 or 9, Debian 11, ...
+        asset: flowkeeper-legacy-tar-gz
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-legacy.tar.gz
       #- title: Installation instructions
         #type: link
         #href: http://example.com
