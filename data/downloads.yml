@@ -39,11 +39,16 @@ downloads:
         #size: 160MB
         #type: file
         #href: http://example.com
-      - title: DMG installer
+      - title: DMG installer for Apple silicon (2020+)
         asset: flowkeeper-dmg
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.dmg
+      - title: DMG installer for x86 (before 2020)
+        asset: flowkeeper-x86-dmg
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-x86.dmg
       #- title: Installation instructions
         #type: link
         #href: http://example.com
@@ -52,7 +57,7 @@ downloads:
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
   - os: "Linux"
-    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu, Fefora and RHEL."
+    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu and Fefora running GNOME and KDE on Wayland and XOrg"
     files:
       #- title: Flowkeeper on Flathub
         #type: link
