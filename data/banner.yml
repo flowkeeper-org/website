@@ -5,6 +5,7 @@ subtitle: |
   -- Plan your work and execute it.
 content : |
     Flowkeeper is a <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> desktop timer for power users. It is a simple tool, which focuses on doing one thing well. It is Free Software with open source.
+    <div>If you used it, I will appreciate it if you take a minute to <a href="https://www.producthunt.com/products/flowkeeper/reviews/new">provide some feedback</a>. Your constructive criticism is welcome!</div>
 buttons:
   primary:
     label : "Download"
