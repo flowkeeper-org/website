@@ -1,7 +1,12 @@
 <!-- Downloads -->
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
-        <h2 id="downloads-title">{{ .title }}</h2>
+        <h2>
+        	<span id="downloads-title">{{ .title }}</span>
+	        <a id="downloads-whatsnew" style="font-size: 50%; padding-left: 10px; text-decoration: underline;" href="#">
+	        	<i class="fa-light fa-external-link"></i> What's new
+	        </a>
+	    </h2>
         <h3 id="downloads-subtitle">The latest release</h3>
         <p>{{ .content | safeHTML }}</p>
         <!-- Downloads -->

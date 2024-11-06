@@ -1,0 +1,48 @@
+style: "style1 orient-left content-align-left image-position-right"
+title : "Flowkeeper v0.8.0"
+subtitle: |
+  November 4, 2024
+content : |
+    <p>At the beginning we wanted to only add the <i>Tags</i> feature and improve automated test coverage. However, 
+    while doing the latter, we identified a number of subtle, but important bugs in Import / Export mechanism, and 
+    fixing them turned into a major codebase refactoring.</p>
+    <p>We also decided to put the "resting" music back into the app, and made the sound output configurable.</p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.8.0"
+  secondary:
+    label: "Go Back"
+    link: "/#download"
+features:
+  1:
+    style: "style1 orient-right"
+    title : "Tags as an alternative to backlogs"
+    content: |
+      <p>You can now use #tags in work items.</p>
+      <p>When Tags are enabled, work item text wraps if it doesn't fit on one line.</p>
+      <p>This feature is turned on by default, and you can turn it off in Settings > General.</p>
+    image: "../images/releases/v0.8.0/tags.png"
+  2:
+    style: "style1"
+    title : "Enhanced audio section"
+    content: |
+      <p>We embedded the new resting music -- "Madelene" by Lobo Loco, with kind permission from the author 
+      (CC-BY-NC-ND).</p>
+      <p>It is enabled by default.</p>
+      <p>The audio output is now selectable in Settings > Audio.</p>
+    image: "../images/releases/v0.8.0/audio.png"
+  3:
+    style: "style1 orient-right"
+    title : "Bug fixes and technical improvements"
+    content: |
+      <p>Fixed "user already exists" import error.</p>
+      <p>Fixed incorrect pomodoro states after import.</p>
+      <p>Fixed incorrect timestamps in smart import.</p>
+      <p>Fixed incorrect work / rest durations in smart import.</p>
+      <p>Flowkeeper displays window title in the focus mode on Wayland automatically.</p>
+      <p>StartWork strategy now also carries planned rest duration.</p>
+      <p>Smart import now preserves timestamps and history.</p>
+      <p>We can now import stuff which happened in the past.</p>
+      <p>+13% code coverage.</p>
+    image: "../images/releases/v0.8.0/coverage.png"

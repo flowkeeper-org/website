@@ -1,0 +1,13 @@
+{{ define "main" }}
+  
+	{{ partial "banner" site.Data.release_v080 }}
+  {{ range site.Data.release_v080.features }}
+	{{ partial "spotlight" . }}
+    <article>
+      <h2>{{ .label }}</h2>
+    </article>
+  {{ end }}
+	{{ partial "footer" . }}
+
+{{ end }}
+
