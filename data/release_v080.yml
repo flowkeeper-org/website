@@ -1,5 +1,5 @@
 style: "style1 orient-left content-align-left image-position-right"
-title : "Flowkeeper v0.8.0"
+title : "Flowkeeper v0.8.x"
 subtitle: |
   November 4, 2024
 content : |
@@ -40,6 +40,7 @@ features:
       <p>Fixed incorrect pomodoro states after import.</p>
       <p>Fixed incorrect timestamps in smart import.</p>
       <p>Fixed incorrect work / rest durations in smart import.</p>
+      <p>Fixed a bug with the 8th step of Tutorial.</p>
       <p>Flowkeeper displays window title in the focus mode on Wayland automatically.</p>
       <p>StartWork strategy now also carries planned rest duration.</p>
       <p>Smart import now preserves timestamps and history.</p>
