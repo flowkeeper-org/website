@@ -1,5 +1,6 @@
 <!-- Gallery -->
 {{ $release := .release }}
+{{ $os := .os }}
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2>{{ .title }}</h2>
@@ -10,8 +11,8 @@
     <div class="gallery {{ .style }}">
         {{ range .pictures }}
             <article>
-                <a href="images/releases/{{ $release }}/fulls/{{ .image }}" class="image">
-                    <img src="images/releases/{{ $release }}/thumbs/{{ .image }}" alt="" />
+                <a href="images/releases/{{ $release }}/{{ $os }}/fulls/{{ .image }}" class="image">
+                    <img src="images/releases/{{ $release }}/{{ $os }}/thumbs/{{ .image }}" alt="" />
                 </a>
                 <div class="caption">
                     <h3>{{ .title }}</h3>

@@ -1,7 +1,8 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
 release: "v0.9.0"
-generator: "Kubuntu 20.04 (XOrg, KDE Plasma 5)"
+os: "Linux"
+generator: "Ubuntu 20.04 (XOrg, KDE Plasma 5.18)"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
@@ -49,6 +50,10 @@ pictures:
   - title: "Integrations"
     content: "You can configure Flowkeeper to execute external programs on each and every event. This is a powerful facility, allowing to integrate Flowkeeper with other systems in real time."
     image: "21-settings-integration-full.jpg"
+
+  - title: "UI Customization"
+    content: "You can configure Flowkeeper UI for your liking. Meet my cat Medallion."
+    image: "10-customized-full.jpg"
 
   - title: "Windows Support"
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
