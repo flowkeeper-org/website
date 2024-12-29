@@ -72,5 +72,5 @@ for original in *.png; do
 	echo " - Full-sized screenshot"
 	process "$original" "$fulls/$filename" "100%"
 	echo " - Thumbnail screenshot"
-	process "$original" "$thumbs/$filename" "50%"
+	process "$original" "$thumbs/$filename" "33%"
 done
