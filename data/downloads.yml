@@ -31,14 +31,6 @@ downloads:
       #- title: Flowkeeper in AppStore
         #type: link
         #href: http://example.com
-      #- title: Installer for ARM
-        #size: 175MB
-        #type: file
-        #href: http://example.com
-      #- title: Installer for x86
-        #size: 160MB
-        #type: file
-        #href: http://example.com
       - title: DMG installer for Apple silicon (2020+)
         asset: flowkeeper-dmg
         size: N/A
@@ -79,19 +71,23 @@ downloads:
         #size: 160MB
         #type: file
         #href: http://example.com
+      #- title: AppImage
+        #size: 160MB
+        #type: file
+        #href: http://example.com
       - title: All-in-one binary
         asset: flowkeeper
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper
-      - title: Portable archive
+      - title: Portable archive (.tar.gz)
         asset: flowkeeper-tar-gz
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.tar.gz
-      #- title: Installation instructions
-        #type: link
-        #href: http://example.com
+      - title: Flowkeeper in AUR (Arch Linux)
+        type: link
+        href: https://aur.archlinux.org/packages/flowkeeper-bin
       #- type: shell
         #content: |
           #Debian and derivatives (Ubuntu, Mint, ...)

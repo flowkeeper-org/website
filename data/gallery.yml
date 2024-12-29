@@ -1,79 +1,59 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
-content: |
-  Those screenshots were generated on Kubuntu 20.04 (XOrg, KDE Plasma 5) for the latest version of Flowkeeper.
+release: "v0.9.0"
+generator: "Kubuntu 20.04 (XOrg, KDE Plasma 5)"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
-    image: "images/gallery/fulls/01-backlog-full.jpg"
-    thumb: "images/gallery/thumbs/01-backlog-full.jpg"
-    button: "Details"
+    image: "01-backlog-full.jpg"
 
   - title: "Progress Indicators"
     content: "Flowkeeper's colorful progress indicator in system tray is instantly recognizable in a workspace."
-    image: "images/gallery/fulls/02-pomodoro-full.jpg"
-    thumb: "images/gallery/thumbs/02-pomodoro-full.jpg"
-    button: "Details"
+    image: "02-pomodoro-full.jpg"
 
   - title: "Offline Mode"
     content: |
       Flowkeeper can store its data in plaintext files, which you can copy, backup and edit yourself, if necessary.
-    image: "images/gallery/fulls/03-settings-connection-offline-full.jpg"
-    thumb: "images/gallery/thumbs/03-settings-connection-offline-full.jpg"
-    button: "Details"
+    image: "03-settings-connection-offline-full.jpg"
 
   - title: "Keyboard Shortcuts"
     content: "You can use all Flowkeeper features without ever touching the mouse. The hotkeys are intuitive and configurable."
-    image: "images/gallery/fulls/06-shortcuts-full.jpg"
-    thumb: "images/gallery/thumbs/06-shortcuts-full.jpg"
-    button: "Details"
+    image: "06-shortcuts-full.jpg"
 
   - title: "Configurable Audio"
     content: |
       Flowkeeper ticks and dings just like a real kitchen times. In addition to that, you can configure some melody to play while
       you should be resting -- this quickly creates a strong reflex to take a pause.
-    image: "images/gallery/fulls/07-settings-audio-full.jpg"
-    thumb: "images/gallery/thumbs/07-settings-audio-full.jpg"
-    button: "Details"
+    image: "07-settings-audio-full.jpg"
 
   - title: "Dark Theme"
     content: "Every app should have a dark theme!"
-    image: "images/gallery/fulls/08-dark-theme-full.jpg"
-    thumb: "images/gallery/thumbs/08-dark-theme-full.jpg"
-    button: "Details"
+    image: "08-dark-theme-full.jpg"
 
   - title: "Light Theme"
     content: "The light theme for the purists."
-    image: "images/gallery/fulls/09-light-theme-full.jpg"
-    thumb: "images/gallery/thumbs/09-light-theme-full.jpg"
-    button: "Details"
+    image: "09-light-theme-full.jpg"
 
   - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
-    image: "images/gallery/fulls/12-export-full.jpg"
-    thumb: "images/gallery/thumbs/12-export-full.jpg"
-    button: "Details"
+    image: "12-export-full.jpg"
 
   - title: "Stats -- Month"
     content: "You can see how your are progressing through the last 30 days."
-    image: "images/gallery/fulls/14-stats-month-full.jpg"
-    thumb: "images/gallery/thumbs/14-stats-month-full.jpg"
-    button: "Details"
+    image: "14-stats-month-full.jpg"
 
   - title: "Work Summary"
-    content: "Generate a summary of the work you did and export it as a Markdown or CSV. It's a useful feature for filling timesheets."
-    image: "images/gallery/fulls/16-work-summary-full.jpg"
-    thumb: "images/gallery/thumbs/16-work-summary-full.jpg"
-    button: "Details"
+    content: "Generate a summary of the work you did and export it in a variety of formats, including Markdown, CSV, JSON, etc. It's a useful feature for filling timesheets and exporting data to digital logs."
+    image: "16-work-summary-full.jpg"
+
+  - title: "Integrations"
+    content: "You can configure Flowkeeper to execute external programs on each and every event. This is a powerful facility, allowing to integrate Flowkeeper with other systems in real time."
+    image: "21-settings-integration-full.jpg"
 
   - title: "Windows Support"
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
-    image: "images/gallery/fulls/17-backlog-windows-full.jpg"
-    thumb: "images/gallery/thumbs/17-backlog-windows-full.jpg"
-    button: "Details"
+    image: "17-backlog-windows-full.jpg"
 
   - title: "macOS Support"
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on macOS 14.5."
-    image: "images/gallery/fulls/20-main-dark-macos-full.jpg"
-    thumb: "images/gallery/thumbs/20-main-dark-macos-full.jpg"
-    button: "Details"
+    image: "20-main-dark-macos-full.jpg"

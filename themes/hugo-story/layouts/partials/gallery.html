@@ -1,14 +1,23 @@
 <!-- Gallery -->
+{{ $release := .release }}
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2>{{ .title }}</h2>
-        <p>{{ .content | safeHTML }}</p>
+        <p>Those screenshots were generated on {{ .generator }} for Flowkeeper {{ .release }}.</p>
     </div>
 
     <!-- Gallery -->
     <div class="gallery {{ .style }}">
         {{ range .pictures }}
-            {{ partial "picture" . }}
+            <article>
+                <a href="images/releases/{{ $release }}/fulls/{{ .image }}" class="image">
+                    <img src="images/releases/{{ $release }}/thumbs/{{ .image }}" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .content }}</p>
+                </div>
+            </article>
         {{ end }}
     </div>
 </section>
