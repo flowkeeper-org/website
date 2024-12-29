@@ -61,7 +61,7 @@ process() {
 	# echo "   - Deleted PNG"
 }
 
-for original in *-full.png; do
+for original in *.png; do
 	filename="${original%.*}"
 	echo "Processing $filename:"
 	echo " - Full-sized screenshot"
