@@ -6,59 +6,59 @@ generator: "Ubuntu 20.04 (XOrg, KDE Plasma 5.18)"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
-    image: "01-backlog-full.jpg"
+    image: "01-backlog-full"
 
   - title: "Progress Indicators"
     content: "Flowkeeper's colorful progress indicator in system tray is instantly recognizable in a workspace."
-    image: "02-pomodoro-full.jpg"
+    image: "02-pomodoro-full"
 
   - title: "Offline Mode"
     content: |
       Flowkeeper can store its data in plaintext files, which you can copy, backup and edit yourself, if necessary.
-    image: "03-settings-connection-offline-full.jpg"
+    image: "03-settings-connection-offline-full"
 
   - title: "Keyboard Shortcuts"
     content: "You can use all Flowkeeper features without ever touching the mouse. The hotkeys are intuitive and configurable."
-    image: "06-shortcuts-full.jpg"
+    image: "06-shortcuts-full"
 
   - title: "Configurable Audio"
     content: |
       Flowkeeper ticks and dings just like a real kitchen times. In addition to that, you can configure some melody to play while
       you should be resting -- this quickly creates a strong reflex to take a pause.
-    image: "07-settings-audio-full.jpg"
+    image: "07-settings-audio-full"
 
   - title: "Dark Theme"
     content: "Every app should have a dark theme!"
-    image: "08-dark-theme-full.jpg"
+    image: "08-dark-theme-full"
 
   - title: "Light Theme"
     content: "The light theme for the purists."
-    image: "09-light-theme-full.jpg"
+    image: "09-light-theme-full"
 
   - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
-    image: "12-export-full.jpg"
+    image: "12-export-full"
 
   - title: "Stats -- Month"
     content: "You can see how your are progressing through the last 30 days."
-    image: "14-stats-month-full.jpg"
+    image: "14-stats-month-full"
 
   - title: "Work Summary"
     content: "Generate a summary of the work you did and export it in a variety of formats, including Markdown, CSV, JSON, etc. It's a useful feature for filling timesheets and exporting data to digital logs."
-    image: "16-work-summary-full.jpg"
+    image: "16-work-summary-full"
 
   - title: "Integrations"
     content: "You can configure Flowkeeper to execute external programs on each and every event. This is a powerful facility, allowing to integrate Flowkeeper with other systems in real time."
-    image: "21-settings-integration-full.jpg"
+    image: "21-settings-integration-full"
 
   - title: "UI Customization"
     content: "You can configure Flowkeeper UI for your liking. Meet my cat Medallion."
-    image: "10-customized-full.jpg"
+    image: "10-customized-full"
 
   - title: "Windows Support"
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
-    image: "17-backlog-windows-full.jpg"
+    image: "17-backlog-windows-full"
 
   - title: "macOS Support"
     content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on macOS 14.5."
-    image: "20-main-dark-macos-full.jpg"
+    image: "20-main-dark-macos-full"

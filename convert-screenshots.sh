@@ -45,26 +45,27 @@ process() {
 	getcrop "$original"
 	
 	out_png="$outfile.png"
+	out_jpg="$outfile.jpg"
     if [ -x "$(command -v magick)" ]; then
-s		magick "$original" -crop "$crop" -resize "$resize" -unsharp 0x1 "$out_png"
+		magick "$original" -crop "$crop" -resize "$resize" "$out_png"
 		echo "   - Saved PNG using magick: $out_png"
-		magick "$out_png" -quality 90 "$outfile"
-		echo "   - Saved JPG using magick: $outfile"
+		# magick "$out_png" -quality 90 "$out_jpg"
+		# echo "   - Saved JPG using magick: $out_jpg"
 	else
-		convert "$original" -crop "$crop" -resize "$resize" -unsharp 0x1 "$out_png"
+		convert "$original" -crop "$crop" -resize "$resize" "$out_png"
 		echo "   - Saved PNG using convert: $out_png"
-		convert "$out_png" -quality 90 "$outfile"
-		echo "   - Saved JPG using convert: $outfile"
+		# convert "$out_png" -quality 90 "$out_jpg"
+		# echo "   - Saved JPG using convert: $out_jpg"
     fi
-	rm "$out_png"
-	echo "   - Deleted PNG"
+	# rm "$out_png"
+	# echo "   - Deleted PNG"
 }
 
 for original in *-full.png; do
 	filename="${original%.*}"
 	echo "Processing $filename:"
 	echo " - Full-sized screenshot"
-	process "$original" "$fulls/$filename.jpg" "1920x1080"
+	process "$original" "$fulls/$filename" "100%"
 	echo " - Thumbnail screenshot"
-	process "$original" "$thumbs/$filename.jpg" "960x540"
+	process "$original" "$thumbs/$filename" "50%"
 done
