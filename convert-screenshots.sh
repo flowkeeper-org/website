@@ -23,7 +23,7 @@ mkdir -p $fulls
 thumbs="$outbase/thumbs"
 mkdir -p $thumbs
 
-cd ~/projects/fk-desktop/test-results
+cd ../fk-desktop/test-results
 
 getcrop() {
 	local original=$1
@@ -48,7 +48,7 @@ process() {
 	local resize=$3
 
 	getcrop "$original"
-	
+
 	out_png="$outfile.png"
 	out_jpg="$outfile.jpg"
     if [ -x "$(command -v magick)" ]; then
