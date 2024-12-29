@@ -2,10 +2,15 @@
 
 sitedir=$(pwd)
 release=$1
-os=$(uname)
+os=$2
 
 if [ -z "$release" ]; then
 	echo "Fatal: Specify a release, e.g. v0.9.0"
+	exit 1
+fi
+
+if [ -z "$os" ]; then
+	echo "Fatal: Specify an OS, i.e. macOS, Windows, or Linux"
 	exit 1
 fi
 

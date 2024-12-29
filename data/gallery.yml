@@ -1,8 +1,6 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
 release: "v0.9.0"
-os: "Linux"
-generator: "Ubuntu 20.04 (XOrg, KDE Plasma 5.18)"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
@@ -54,11 +52,3 @@ pictures:
   - title: "UI Customization"
     content: "You can configure Flowkeeper UI for your liking. Meet my cat Medallion."
     image: "10-customized"
-
-  - title: "Windows Support"
-    content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on Windows 11."
-    image: "17-backlog-windows"
-
-  - title: "macOS Support"
-    content: "You can use Flowkeeper on a wide variety of operating systems. This screenshot was taken on macOS 14.5."
-    image: "20-main-dark-macos"

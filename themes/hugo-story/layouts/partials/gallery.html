@@ -1,18 +1,26 @@
 <!-- Gallery -->
 {{ $release := .release }}
-{{ $os := .os }}
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2>{{ .title }}</h2>
-        <p>Those screenshots were generated on {{ .generator }} for Flowkeeper {{ .release }}.</p>
+        <div>
+            <a id="gallery-windows" href="#" class="button small primary">Windows</a> 
+            <a id="gallery-macos" href="#" class="button small">macOS</a> 
+            <a id="gallery-linux" href="#" class="button small">Linux</a>
+        </div>
+        <p>Those screenshots were generated on 
+            <span id="generator-windows">Windows 11 (dark mode)</span> 
+            <span id="generator-macos" hidden>macOS Sequoia 15.0.1</span> 
+            <span id="generator-linux" hidden>Ubuntu 20.04 (XOrg, KDE Plasma 5.18)</span> 
+            for Flowkeeper {{ .release }}.</p>
     </div>
 
     <!-- Gallery -->
     <div class="gallery {{ .style }}">
         {{ range .pictures }}
             <article>
-                <a href="images/releases/{{ $release }}/{{ $os }}/fulls/{{ .image }}-full.png" class="image">
-                    <img src="images/releases/{{ $release }}/{{ $os }}/thumbs/{{ .image }}-full.png" alt="" />
+                <a href="images/releases/{{ $release }}/Windows/fulls/{{ .image }}-full.png" class="image" id="screenshot-{{ .image }}">
+                    <img src="images/releases/{{ $release }}/Windows/thumbs/{{ .image }}-full.png" alt="" id="thumbnail-{{ .image }}"/>
                 </a>
                 <div class="caption">
                     <h3>{{ .title }}</h3>
