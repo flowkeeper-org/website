@@ -7,8 +7,9 @@
 {{ $util := resources.Get "js/util.js" }}
 {{ $main := resources.Get "js/main.js" }}
 {{ $github := resources.Get "js/github.js" }}
+{{ $screenshots := resources.Get "js/screenshots.js" }}
 
-{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $github | resources.Concat "js/bundle.js" | minify }}
+{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $github $screenshots | resources.Concat "js/bundle.js" | minify }}
 
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>

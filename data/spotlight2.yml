@@ -8,7 +8,7 @@ content: |
     <li><strong>Continuous Improvement</strong> - Flowkeeper is like Apple Health for your Pomodoro Technique. You can use it to learn your own habits and improve your planning accordingly.</li>
     <li><strong>Creating Timesheets</strong> - Export all your completed tasks for a given period.</li>
   </ul>
-image: "images/fk-simple.png"
+image: "images/releases/v0.9.0/Linux/fulls/18-main-light-window-border.png"
 #button:
   #label: "Watch Video"
   #link: "https://youtube.com"

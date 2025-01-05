@@ -1,14 +1,34 @@
 <!-- Gallery -->
+{{ $release := .release }}
 <section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
     <div class="inner">
         <h2>{{ .title }}</h2>
-        <p>{{ .content | safeHTML }}</p>
+        <div>
+            <a id="gallery-windows" href="#" class="button small primary">Windows</a> 
+            <a id="gallery-macos" href="#" class="button small">macOS</a> 
+            <a id="gallery-linux" href="#" class="button small">Linux</a>
+            <a id="gallery-x61s" href="#" class="button small">X61s</a>
+        </div>
+        <p>Those screenshots were generated on 
+            <span id="generator-windows">Windows 11 (dark mode)</span> 
+            <span id="generator-macos" hidden>macOS Sequoia 15.0.1</span> 
+            <span id="generator-linux" hidden>Ubuntu 20.04 (XOrg, KDE Plasma 5.18)</span> 
+            <span id="generator-x61s" hidden>a <a href="https://flowkeeper.substack.com/p/digital-asceticism">17-year-old laptop</a> with Debian Sid</span> 
+            for Flowkeeper {{ .release }}.</p>
     </div>
 
     <!-- Gallery -->
     <div class="gallery {{ .style }}">
         {{ range .pictures }}
-            {{ partial "picture" . }}
+            <article>
+                <a href="images/releases/{{ $release }}/Windows/fulls/{{ .image }}-full.png" class="image" id="screenshot-{{ .image }}">
+                    <img src="images/releases/{{ $release }}/Windows/thumbs/{{ .image }}-full.png" alt="" id="thumbnail-{{ .image }}"/>
+                </a>
+                <div class="caption">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .content }}</p>
+                </div>
+            </article>
         {{ end }}
     </div>
 </section>
