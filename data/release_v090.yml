@@ -1,0 +1,96 @@
+style: "style1 orient-left content-align-left image-position-right"
+title : "Flowkeeper v0.9.x"
+subtitle: |
+  January 5, 2025
+content : |
+    <p>In November I received a bunch of useful feedback from people using Flowkeeper. In this release I tried to address 
+    as much of it as I could, as well as implement the "reordering" feature, which I wanted to do since ages.</p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.0"
+  secondary:
+    label: "Go Back"
+    link: "/#download"
+features:
+  a:
+    style: "style1"
+    title : "Reordering backlogs and work items"
+    content: |
+      <p>You can now drag backlogs and work items to reorder them.</p>
+      <p>Backlogs are not ordered automatically anymore.</p>
+    image: "../images/releases/v0.9.0/reordering.gif"
+  b:
+    style: "style1 orient-right"
+    title : "Support for unplanned work items"
+    content: |
+      <p>Unplanned work items are now highlighted with asterisk (*).</p>
+      <p>A work item is considered unplanned if it was created after any of the work items in this backlog was already 
+      started.</p>
+    image: "../images/releases/v0.9.0/unplanned-work-item.png"
+  c:
+    style: "style1"
+    title : "Configurable timer widget"
+    content: |
+      <p>You can now choose between two timer widgets -- "Classic" and "Minimalistic".</p>
+      <p>This configuration wizard is shown when you launch Flowkeeper for the first time. After that, the timer
+      look-and-feel can be configured in Settings > Appearance > Focus bar flavor.</p>
+    image: "../images/releases/v0.9.0/config-focus-mode.png"
+  d:
+    style: "style1 orient-right"
+    title : "Configurable tray icon"
+    content: |
+      <p>The tray icon is now configurable, too. Some users asked for a monochrome version, which I called "Thin".
+      Unfortunately, Qt doesn't provide a way to detect tray background color, so you need to choose between light
+      and dark mode yourself.</p>
+      <p>This configuration wizard is shown when you launch Flowkeeper for the first time. After that, the timer
+      look-and-feel can be configured in Settings > Appearance > Tray icon flavor.</p>
+    image: "../images/releases/v0.9.0/config-tray-icons.png"
+  e:
+    style: "style1"
+    title : "Timer context menu in Minimalistic mode"
+    content: |
+      <p>In Minimalistic timer mode you can access Pomodoro actions via a context menu by clicking on the timer.</p>
+      <p>The Classic timer mode works the same way as before, without a menu.</p>
+    image: "../images/releases/v0.9.0/minimal-context-menu.gif"
+  f:
+    style: "style1 orient-right"
+    title : "Hiding completed items button moved to the toolbar"
+    content: |
+      <p>This button used to be part of the focus widget, now moved to the toolbar.</p>
+    image: "../images/releases/v0.9.0/hide-completed.gif"
+  g:
+    style: "style1"
+    title : "Tooltips and shortcuts"
+    content: |
+      <p>All toolbar buttons and icons now have tooltips with shortcuts in them.</p>
+    image: "../images/releases/v0.9.0/tooltips.gif"
+  h:
+    style: "style1 orient-right"
+    title : "Running external programs"
+    content: |
+      <p>There were several requests to think about Flowkeeper integration with external tools like diaries and
+      note-taking apps. In 0.9.0 I addressed this demand via configurable "Integration" feature.</p>
+      <p>You can make Flowkeeper run an external program whenever something happens. You can pick from a variety 
+      of Flowkeeper events, like "FileEventSource.AfterWorkitemCreate" or even "WorkitemTableView.AfterSelectionChanged".</p>
+      <p>You can use <a href="https://www.w3schools.com/python/python_string_formatting.asp">Python f-string placeholders</a>, e.g. {workitem.get_name()} or even {dir()}.</p>
+    image: "../images/releases/v0.9.0/integrations.gif"
+  i:
+    style: "style1"
+    title : "Journaling-friendly Work Summary"
+    content: |
+      <p>By pressing F3 you can access Work Summary, which received some major improvements in version 0.9.0.</p>
+      <p>New output formats: Markdown table, Emacs Org mode, JSON and XML.</p>
+      <p>You can also filter by the reporting period. For example, "Previous week" works well if you are preparing
+      your timesheets on Monday.</p>
+      <p>The default action in the "Work Summary" window is "Copy summary to clipboard and close". Also, it remembers 
+      last settings, so that if you use it routinely, you can simply press F3 -> Enter and get all your needed 
+      data in the clipboard in just two simple keystrokes.</p>
+    image: "../images/releases/v0.9.0/work-summary.gif"
+  j:
+    style: "style1 orient-right"
+    title : "Single Flowkeeper instance"
+    content: |
+      <p>There's a new setting to prevent multiple Flowkeeper instances from running. If it is enabled, nothing will
+      happen when you try to launch the second Flowkeeper instance.</p>
+    image: "../images/releases/v0.9.0/single-instance.png"
