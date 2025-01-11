@@ -10,7 +10,7 @@ buttons:
     label: "GitHub Release"
     link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.0"
   secondary:
-    label: "Go Back"
+    label: "Downloads"
     link: "/#download"
 features:
   a:
