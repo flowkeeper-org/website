@@ -1,5 +1,5 @@
 style: "style1 orient-left content-align-left image-position-right"
-title : "Flowkeeper v0.9.1"
+title : "Flowkeeper v0.9.x"
 subtitle: |
   January 15, 2025
 content : |
@@ -8,7 +8,7 @@ content : |
 buttons:
   primary:
     label: "GitHub Release"
-    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.0"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.1"
   secondary:
     label: "Downloads"
     link: "/#download"
