@@ -25,3 +25,8 @@ questions:
   - q: How can I report a bug or request a feature?
     a: |
       Please file an Issue on our GitHub page: https://github.com/flowkeeper-org/fk-desktop/issues. Thank you!
+  - q: I switched to Flatpak, and I don't see my data anymore. How to get it back?
+    a: |
+      Flatpak apps are sandboxed and get their own copy of configuration files. Go to Settings > Connection > Browse... and select your old data file.
+      The file picker is aware of Flatpak, and automatically grants Flowkeeper access to selected file outside of its sandbox. By the way, that's why
+      all file input boxes are grayed out when we run in a sandbox, as you have to use file pickers.
