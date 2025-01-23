@@ -108,8 +108,3 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-arm64
-      - title: Portable archive (.tar.gz)
-        asset: flowkeeper-arm64-tar-gz
-        size: N/A
-        type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-arm64.tar.gz
