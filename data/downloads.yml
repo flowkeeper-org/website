@@ -48,7 +48,7 @@ downloads:
         #content: |
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
-  - os: "Linux"
+  - os: "Linux (x86)"
     intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu and Fefora running GNOME and KDE on Wayland and XOrg"
     files:
       #- title: Flowkeeper on Flathub
@@ -95,3 +95,21 @@ downloads:
 
           #Fedora and derivatives (CentOs, RHEL, ...)
           #$ sudo dnf install flowkeeper-desktop
+  - os: "Linux (arm64)"
+    intro: "This is the experimental installer, tested on Ubuntu 24.04"
+    files:
+      - title: DEB package
+        asset: flowkeeper-arm64-deb
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-arm64.deb
+      - title: All-in-one binary
+        asset: flowkeeper-arm64
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-arm64
+      - title: Portable archive (.tar.gz)
+        asset: flowkeeper-arm64-tar-gz
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-arm64.tar.gz
