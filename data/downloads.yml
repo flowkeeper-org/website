@@ -1,8 +1,8 @@
 title : "Download Flowkeeper"
 id: download
 content: |
-  We build Flowkeeper automatically thanks to GitHub Pipelines. 
-  Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself. 
+  We build Flowkeeper automatically thanks to GitHub Pipelines.
+  Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself.
   You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> in GitHub.
 style: "style1 medium"
 downloads:
@@ -51,9 +51,9 @@ downloads:
   - os: "Linux (x86)"
     intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu and Fefora running GNOME and KDE on Wayland and XOrg"
     files:
-      #- title: Flowkeeper on Flathub
-        #type: link
-        #href: http://example.com
+      - title: Flowkeeper on Flathub
+        type: link
+        href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
@@ -108,8 +108,3 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-arm64
-      - title: Portable archive (.tar.gz)
-        asset: flowkeeper-arm64-tar-gz
-        size: N/A
-        type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-arm64.tar.gz
