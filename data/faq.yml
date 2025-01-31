@@ -15,7 +15,7 @@ questions:
       We know we should create a proper table for it, but as for now, compared to a typical Pomodoro timer, Flowkeeper: a). Supports a wider range of desktop operating systems, including diverse Linux environments; b). Is more lightweight and performant (it's not based on Electron, and we routinely test it on a Core 2 Duo machine); c). Has portable versions and does not require admin rights to install; d). Is optimized for power users (keyboard shortcuts and rich set of settings); e). Has open source and is free as Freedom; f). Does NOT synchronize data across devices; g). Does NOT have a mobile version; h). Is NOT translated to multiple languages;
   - q: Is it really free?
     a: |
-      Yes, it is totally free, and is distributed under the terms of GPL license, similar to Linux Kernel or Git. There is neither a paid version, nor paid features. We are not sponsored by third parties and do not seek for donations.
+      Yes, it is totally free, and is distributed under the terms of GPL license, similar to Linux Kernel or Git. There is neither a paid version, nor paid features. You can sponsor the project on GitHub -- all funds will go into future Flowkeeper Server infrastructure.
   - q: When I launch Flowkeeper installer, Windows says that it is signed by Vilia SARL. What is it?
     a: |
       Vilia SARL (vilia.fr) is an industrial consulting company owned by Constantine Kulak, Flowkeeper's author. We use an EV certificate issued to Vilia for signing our Windows binaries. Without it Windows would block Flowkeeper installation, complaining about executing unverified software downloaded from Internet.
