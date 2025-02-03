@@ -12,12 +12,11 @@ downloads:
       #- title: Flowkeeper in Microsoft Store
         #type: link
         #href: http://example.com
-      # TODO: Uncomment me once Defender doesn't complain anymore
-      #- title: Installer
-        #asset: setup-exe
-        #size: N/A
-        #type: file
-        #href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
+      - title: Installer
+        asset: setup-exe
+        size: N/A
+        type: file
+        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
       - title: Portable exe
         asset: flowkeeper-exe
         size: N/A
