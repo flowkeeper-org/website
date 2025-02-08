@@ -11,7 +11,7 @@ buttons:
     label : "Download"
     link : "#download"
   secondary:
-    label : "Contribute"
+    label : "GitHub"
     link : "https://github.com/flowkeeper-org/fk-desktop"
 image : "images/fk-imac.jpg"
 
