@@ -32,7 +32,7 @@ disableKinds = ["taxonomy", "section"]
 ## -----------------------------------------------
 
 [Params]
-  description = "Flowkeeper is a Pomodoro Technique desktop timer for power users and professional teams"
+  description = "Flowkeeper is a Pomodoro® Technique desktop timer for power users"
   logo = "images/logo.svg"
   favicon = true
 
