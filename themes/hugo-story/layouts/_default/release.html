@@ -1,13 +1,11 @@
 {{ define "main" }}
-  
-	{{ partial "banner" site.Data.release_v091 }}
-  {{ range site.Data.release_v091.features }}
-	{{ partial "spotlight" . }}
+{{ $data := index site.Data.releases .File.BaseFileName }}
+{{ partial "banner" $data }}
+{{ range $data.features }}
+  {{ partial "spotlight" . }}
     <article>
       <h2>{{ .label }}</h2>
     </article>
   {{ end }}
-	{{ partial "footer" . }}
-
+  {{ partial "footer" . }}
 {{ end }}
-

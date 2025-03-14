@@ -1,0 +1,186 @@
+style: "style1 orient-right content-align-left image-position-left"
+title : "Flowkeeper v0.10.0"
+subtitle: |
+  March 15, 2025
+content : |
+    <p>This version brings Flowkeeper even closer to the original Pomodoro Technique definition from Francesco Cirillo's book.
+    Pomodoro interruptions are now handled as the book prescribes, and we introduced support for long breaks. One major
+    deviation from the Technique in this version is the ability to track unfocused time. As usual there's a bunch of minor
+    quality-of-life improvements, bugfixes and better support for Linux.</p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.1"
+  secondary:
+    label: "Downloads"
+    link: "/#download"
+image : "/images/pomodoro-book.jpg"
+features:
+  a:
+    style: "style1"
+    title : "Tracking unfocused time"
+    content: |
+      <p>Some activities are not compatible with Pomodoro Technique, or simply do not require deep focus. At the same time,
+      stuff like calls and meetings steals your productivity, so you'd still like to track those, just to know how much damage
+      they do.</p>
+      <p>Try to start a work item with no pomodoros -- this will automatically make it a time tracker.</p>
+      <p>In Tracking mode Flowkeeper counts time up rather than down. You still get your progress indicator, but it functions
+      as a wall clock rather than a kitchen timer.</p>
+      <p>You can start / stop / restart tracking via Ctrl-S / ⌘-S.</p>
+      <p>You can't mix focused (Pomodoro) and unfocused time tracking on the same work item. Also, unfocused time is not counted
+      in Pomodoro Health (F9). Otherwise those Tracker items behave just like the normal Pomodoro ones. For example, they show
+      up in the Work Summary (F3) and can be completed.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/94">#94</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/98">#98</a>
+      </sup>
+    image: "../images/releases/v0.10.0/tracker-items.gif"
+  b:
+    style: "style1 orient-right"
+    title : "Long breaks"
+    content: |
+      <p>Pomodoro Technique defines two types of breaks. The short ones keep you focused while you work on one task, while the
+      long ones allows you to relax and help switching between tasks.</p>
+      <p>Until now Flowkeeper only supported short breaks, ensuring that you are getting some minimal amount of rest between
+      pomodoros needed for <a href="https://modelthinkers.com/mental-model/focused-and-diffuse-thinking">switching between
+      focused and diffused thinking modes</a>. And then it was up to you to decide when you need to take a longer break.</p>
+      <p>In v0.10.0 Flowkeeper suggests you taking a long break after four completed pomodoros, as the Book prescribes.</p>
+      <p>Unlike short breaks the long ones don't have predefined duration, and thus Flowkeeper displays elapsed time, not
+      remaining. There's no music during long breaks. To end a break, you press Ctrl-S / ⌘-S, or click "Stop Tracking Time".</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/53">#53</a>
+      </sup>
+    image: "../images/releases/v0.10.0/long-breaks.gif"
+  c:
+    style: "style1"
+    title : "Working in series"
+    content: |
+      <p>Some Flowkeeper users prefer their Pomodoro fully automated, i.e. next Pomodoro starting automatically after the short
+      break ends. In this version we implemented it as an optional feature, which is disabled by default.</p>
+      <p>The series stops if</p>
+      <ul>
+      <li>There are no more startable pomodoros in the current work item,</li>
+      <li>You voided a Pomodoro,</li>
+      <li>A long break started.</li>
+      </ul>
+      <p>To enable working in series, go to Settings (F10) > Series and breaks.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/53">#53</a>
+      </sup>
+    image: "../images/releases/v0.10.0/series-config.png"
+  d:
+    style: "style1 orient-right"
+    title : "Moving items between backlogs"
+    content: |
+      <p>If you select a backlog and press Ctrl-M / ⌘-M, Flowkeeper will create a new backlog with a copy of incomplete work
+      items from the one you selected.</p>
+      <p>In addition to that, in v0.10.0 we also implemented a way to <i>move</i> work items between backlogs. To move an
+      item, just drag it to a different list.</p>
+      <p>It is useful for filling your daily task list with items from global backlogs, or to finish something you couldn't
+      complete yesterday. This feature makes planning a breeze.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/60">#60</a>
+      </sup>
+    image: "../images/releases/v0.10.0/move-items.gif"
+  e:
+    style: "style1"
+    title : "Recording interruptions"
+    content: |
+      <p>Avoiding interruptions is the key aspect of Pomodoro Technique. The Book is very prescriptive about recording
+      interruptions and doing retrospective analysis on those.</p>
+      <p>Starting with v0.10.0 there's a new "Record Interruption" action when you click the timer widget or press Ctrl-T /
+      ⌘-T. It allows you enter an optional note, and leaves a subtle tick mark ' next to the current Pomodoro.</p>
+      <p>Voiding a Pomodoro records an interruption automatically.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/41">#41</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/75">#75</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/92">#92</a>
+      </sup>
+    image: "../images/releases/v0.10.0/interruptions.gif"
+  f:
+    style: "style1 orient-right"
+    title : "Import from GitHub [Beta]"
+    content: |
+      <p>Import from GitHub Issues is now available by pressing Ctrl-I / ⌘-I. It supports both public and private
+      repositories.</p>
+      <p>When you import from GitHub, you can choose to import metadata like assignee or issue state as #tags, so that you
+      can filter by issue labels, for example.</p>
+      <p>It is important to understand how consecutive imports merge with existing data:</p>
+      <ul>
+      <li>Import creates a backlog with the name corresponding to GitHub org/repo, e.g. "flowkeeper-org/fk-desktop". If this
+      backlog already exists, Flowkeeper will try to merge imported data with its content.</li>
+      <li>If it finds a work item that starts with "[id] - [title]", it will consider it the same item. It will rename it,
+      if you chose a different set of tags during the import, but it will not delete this item or create a duplicate. So,
+      if you tracked some time or done some pomodoros on this item -- those will stay.</li>
+      <li>It will create new items which don't exist yet.</li>
+      <li>It won't touch completed items (they are sealed and can't be renamed anyway), and it will never delete anything.</li>
+      </ul>
+      <p>If you execute it against some large repository like facebook/react, this import will push Flowkeeper to its
+      limits, mainly because of hundreds of new tags. If you uncheck tags creation or disable tags altogether in Settings >
+      General > Display #tags, Flowkeeper will handle even thousands of tasks without breaking a sweat.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/125">#125</a>
+      </sup>
+    image: "../images/releases/v0.10.0/import-github.gif"
+  g:
+    style: "style1"
+    title : "Import from CSV [Beta]"
+    content: |
+      <p>Import from CSV is now available by pressing Ctrl-I / ⌘-I. You can choose the field delimiter, as well as specify
+      that your CSV has headers. The CSV file <i>must</i> have three columns -- backlog name, work item name, and work item
+      state ("new" or "completed").</p>
+      <p>It is important to understand how consecutive imports merge with existing data:</p>
+      <ul>
+      <li>Import creates backlogs corresponding to the first column in the file. If a backlog with this name already exists --
+      it will be reused.</li>
+      <li>If it finds an existing backlog / work item combination, it will leave it as-is, except if you marked it as completed
+      in the CSV file -- then it will complete the corresponding item in Flowkeeper.</li>
+      <li>If you rename something in the CSV and re-import, Flowkeeper will create new items. It won't rename existing items.
+      If you delete rows from CSV, the import will simply ignore it.</li>
+      <li>It won't touch completed items (they are sealed and can't be renamed anyway), and it will never delete anything.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/125">#125</a>
+      </sup>
+    image: "../images/releases/v0.10.0/import-csv.gif"
+  h:
+    style: "style1 orient-right"
+    title : "Hiding completed items button moved to the toolbar"
+    content: |
+      <p>This button used to be part of the focus widget, now moved to the toolbar.</p>
+    image: "../images/releases/v0.9.0/hide-completed.gif"
+  i:
+    style: "style1"
+    title : "Tooltips and shortcuts"
+    content: |
+      <p>All toolbar buttons and icons now have tooltips with shortcuts in them.</p>
+    image: "../images/releases/v0.9.0/tooltips.gif"
+  j:
+    style: "style1 orient-right"
+    title : "Running external programs"
+    content: |
+      <p>There were several requests to think about Flowkeeper integration with external tools like diaries and
+      note-taking apps. In 0.9.0 I addressed this demand via configurable "Integration" feature.</p>
+      <p>You can make Flowkeeper run an external program whenever something happens. You can pick from a variety 
+      of Flowkeeper events, like "FileEventSource.AfterWorkitemCreate" or even "WorkitemTableView.AfterSelectionChanged".</p>
+      <p>You can use <a href="https://www.w3schools.com/python/python_string_formatting.asp">Python f-string placeholders</a>, e.g. {workitem.get_name()} or even {dir()}.</p>
+    image: "../images/releases/v0.9.0/integrations.gif"
+  k:
+    style: "style1"
+    title : "Journaling-friendly Work Summary"
+    content: |
+      <p>By pressing F3 you can access Work Summary, which received some major improvements in version 0.9.0.</p>
+      <p>New output formats: Markdown table, Emacs Org mode, JSON and XML.</p>
+      <p>You can also filter by the reporting period. For example, "Previous week" works well if you are preparing
+      your timesheets on Monday.</p>
+      <p>The default action in the "Work Summary" window is "Copy summary to clipboard and close". Also, it remembers 
+      last settings, so that if you use it routinely, you can simply press F3 -> Enter and get all your needed 
+      data in the clipboard in just two simple keystrokes.</p>
+    image: "../images/releases/v0.9.0/work-summary.gif"
+  l:
+    style: "style1 orient-right"
+    title : "Single Flowkeeper instance"
+    content: |
+      <p>There's a new setting to prevent multiple Flowkeeper instances from running. If it is enabled, nothing will
+      happen when you try to launch the second Flowkeeper instance.</p>
+    image: "../images/releases/v0.9.0/single-instance.png"
