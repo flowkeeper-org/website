@@ -1,5 +1,5 @@
 style: "style1 orient-left content-align-left image-position-right"
-title : "Flowkeeper v0.8.x"
+title : "Flowkeeper v0.8.0"
 subtitle: |
   November 4, 2024
 content : |
@@ -7,6 +7,7 @@ content : |
     while doing the latter, we identified a number of subtle, but important bugs in Import / Export mechanism, and 
     fixing them turned into a major codebase refactoring.</p>
     <p>We also decided to put the "resting" music back into the app, and made the sound output configurable.</p>
+    <p><a href="/v0.9.0">What's new in v0.9.0</a> →</p>
 buttons:
   primary:
     label: "GitHub Release"

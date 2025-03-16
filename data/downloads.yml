@@ -57,6 +57,9 @@ downloads:
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
+      #-title: Flowkeeper in OBS
+        #type: link
+        #href
       - title: DEB package
         asset: flowkeeper-deb
         size: N/A
@@ -95,6 +98,10 @@ downloads:
 
           #Fedora and derivatives (CentOs, RHEL, ...)
           #$ sudo dnf install flowkeeper-desktop
+
+          #openSUSE Tumbleweed
+          #$ zypper addrepo https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
+          #$ zypper install flowkeeper
   - os: "Linux (arm64)"
     intro: "This is the experimental installer, tested on Ubuntu 24.04"
     files:

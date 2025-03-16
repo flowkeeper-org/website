@@ -1,14 +1,19 @@
 ####################### Spotlight #########################
-style: "style1 orient-right content-align-left image-position-center"
-title : "Flowkeeper Use Cases"
+style: "style2 orient-right content-align-left image-position-center"
+title : "What Makes Flowkeeper Different"
 content: |
+  Unlike other timers on the market, Flowkeeper
   <ul>
-    <li><strong>Getting Things Done</strong> - Flowkeeper reduces the effect of internal and external interruptions on focus and flow.</li>
-    <li><strong>Tasks Tracking</strong> - Take quick notes and create todos, which you can estimate and execute later.</li>
-    <li><strong>Continuous Improvement</strong> - Flowkeeper is like Apple Health for your Pomodoro Technique. You can use it to learn your own habits and improve your planning accordingly.</li>
-    <li><strong>Creating Timesheets</strong> - Export all your completed tasks for a given period.</li>
+    <li>Adheres to the original Pomodoro® Technique description,</li>
+    <li>Includes a powerful task list and backlogs,</li>
+    <li>Features a "classic", desktop-first user interface,</li>
+    <li>Is optimized for power users (keyboard shortcuts and rich set of settings),</li>
+    <li>Has a portable version and does not require admin rights to install,</li>
+    <li>Stores your data locally and doesn't track you,</li>
+    <li>Is 100% free, with no subscriptions or paid versions.</li>
   </ul>
-image: "images/releases/v0.9.0/Linux/fulls/18-main-light-window-border.png"
+  <sub>Image: <a href="https://www.pomodorotechnique.com/the-pomodoro-technique-book/">The Pomodoro® Technique</a> book by Francesco Cirillo.</sub>
+image: "images/pomodoro-book.jpg"
 #button:
   #label: "Watch Video"
   #link: "https://youtube.com"

@@ -1,0 +1,48 @@
+style: "style1 orient-left content-align-left image-position-right"
+title : "Flowkeeper v0.9.1"
+subtitle: |
+  January 15, 2025
+content : |
+    <p>In November I received a bunch of useful feedback from people using Flowkeeper. In this release I tried to address 
+    as much of it as I could, as well as implement the "reordering" feature, which I wanted to do since ages.</p>
+    <p>← <a href="/v0.9.0">What's new in v0.9.0</a> | <a href="/v0.10.0">What's new in v0.10.0</a> →</p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.1"
+  secondary:
+    label: "Downloads"
+    link: "/#download"
+features:
+  a:
+    style: "style1"
+    title : "Bugfixes"
+    content: |
+      This version fixes pretty much every single bug our users reported for v0.8.x and v0.9.x:
+      <ul>
+        <li>Main window doesn't restore correctly on Hyprland (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/48">#48</a>).</li>
+        <li>Unhandled SystemError if Flowkeeper is upgraded while a pomodoro is running (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/62">#62</a>).</li>
+        <li>Broken fonts / squares instead of characters on Ubuntu 23.10 (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/68">#68</a>).</li>
+        <li>"Unhandled JSONDecodeError" behind the proxy (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/69">#69</a>, 
+          <a href="https://github.com/flowkeeper-org/fk-desktop/issues/73">#73</a>).</li>
+        <li>Flowkeeper crashes when you select a directory as a data file (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/70">#70</a>).</li>
+        <li>Error when trying to start another pomodoro while the timer is running (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/72">#72</a>,
+          <a href="https://github.com/flowkeeper-org/fk-desktop/issues/74">#74</a>).</li>
+        <li>On Windows, the main window close button is disabled (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/77">#77</a>).</li>
+        <li>Flowkeeper doesn't switch to focus mode after one completed pomodoro (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/79">#79</a>).</li>
+        <li>Unhandled AttributeError when computer wakes up from sleep while playing audio (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/81">#81</a>).</li>
+        <li>There's no sound until you change Audio settings once (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/85">#85</a>).</li>
+        <li>Able to click "next pomodoro" after marking workitem complete (<a href="https://github.com/flowkeeper-org/fk-desktop/issues/88">#88</a>).</li>
+      </ul>
+    image: "../images/releases/v0.9.1/better-error-reporting.png"
+  b:
+    style: "style1 orient-right"
+    title : "Technical improvements"
+    content: |
+      <ul>
+        <li>Enhanced bug reporting - GitHub issues now include info about versions.</li>
+        <li>New command-line flag: --debug, enables debug logs for this session.</li>
+        <li>System proxy settings are applied automatically.</li>
+        <li>Using embedded Noto Sans font by default, see Settings > Fonts.</li>
+      </ul>
+    image: "../images/releases/v0.9.1/use-default-font.png"

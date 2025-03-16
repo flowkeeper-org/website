@@ -32,13 +32,17 @@ disableKinds = ["taxonomy", "section"]
 ## -----------------------------------------------
 
 [Params]
-  description = "Flowkeeper is a Pomodoro Technique desktop timer for power users and professional teams"
+  description = "Flowkeeper is a Pomodoro® Technique desktop timer for power users"
   logo = "images/logo.svg"
   favicon = true
 
 [Params.social]
   github = "https://github.com/flowkeeper-org/fk-desktop"
   email = "contact@flowkeeper.org"
+  linkedin = "https://www.linkedin.com/company/flowkeeper-org"
+  discord = "https://discord.gg/SJfrsvgfmf"
+  reddit = "https://www.reddit.com/r/Flowkeeper/"
+  telegram = "https://t.me/flowkeeper_org"
 
 [Params.asset]
   fontawesome_css = ["css/fontawesome-all.min.css"]
