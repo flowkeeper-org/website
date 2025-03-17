@@ -172,6 +172,30 @@ features:
     image: "../images/releases/v0.10.0/import-csv.gif"
   h:
     style: "style1 orient-right"
+    title : "Detailed tooltips"
+    content: |
+      <p>Hover your mouse over pomodoros to see the detailed log of your work. We'll see how to visualize it better in the
+      upcoming versions.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/93">#93</a>
+      </sup>
+    image: "../images/releases/v0.10.0/tooltips.png"
+  i:
+    style: "style1"
+    title : "Contact Us menu"
+    content: |
+      <p>You can now provide your feedback, request improvements and report problems directly from Flowkeeper's main menu.
+      Your feedback is greatly appreciated!</p>
+      <ul>
+      <li><a href="https://github.com/flowkeeper-org/fk-desktop/issues">GitHub</a></li>
+      <li><a href="https://discord.gg/MCbxbmjv">Discord</a></li>
+      <li><a href="https://www.reddit.com/r/Flowkeeper">Reddit</a></li>
+      <li><a href="https://www.linkedin.com/company/flowkeeper-org">LinkedIn</a></li>
+      <li><a href="https://t.me/flowkeeper_org">Telegram</a></li>
+      <li><a href="mailto:contact@flowkeeper.org">Email</a></li>
+      </ul>
+      <p>On Flowkeeper main page you can also subscribe to out newsletter.</p>
+    image: "../images/releases/v0.10.0/contact-us.png"
     title : "Flowkeeper on Flathub"
     content: |
       <p>Starting with v0.10.0 you can install Flowkeeper from 
@@ -185,8 +209,8 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/63">#63</a>
       </sup>
     image: "../images/releases/v0.10.0/install-discover.png"
-  i:
-    style: "style1"
+  j:
+    style: "style1 orient-right"
     title : "OpenSUSE repository"
     content: |
       <p>Thanks to the awesome <a href="https://build.opensuse.org/package/show/home:flowkeeper/flowkeeper">openSUSE Build 
@@ -201,8 +225,8 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/127">#127</a>
       </sup>
     image: "../images/releases/v0.10.0/install-obs.png"
-  j:
-    style: "style1 orient-right"
+  k:
+    style: "style1"
     title : "Flowkeeper CLI [Beta]"
     content: |
       <p>All Flowkeeper installers now bundle <code>fk</code> binary, which you can use to query and modify Flowkeeper 
@@ -216,8 +240,8 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/46">#46</a>
       </sup>
     image: "../images/releases/v0.10.0/fk-cli.gif"
-  k:
-    style: "style1"
+  l:
+    style: "style1 orient-right"
     title : "Miscellaneous improvements"
     content: |
       <p>Some of the improvements are less visible, yet they still took some time to implement, so let's list them 
@@ -242,8 +266,8 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/130">#130</a>
       </sup>
     image: "../images/releases/v0.10.0/standard-dirs.png"
-  l:
-    style: "style1 orient-right"
+  m:
+    style: "style1"
     title : "Bugfixes"
     content: |
       <p>Last but not least, I fixed all bugs from GitHub Issues I could reproduce:</p>
