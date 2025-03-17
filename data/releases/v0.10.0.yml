@@ -145,16 +145,30 @@ features:
     image: "../images/releases/v0.10.0/import-csv.gif"
   h:
     style: "style1 orient-right"
-    title : "Hiding completed items button moved to the toolbar"
+    title : "Detailed tooltips"
     content: |
-      <p>This button used to be part of the focus widget, now moved to the toolbar.</p>
-    image: "../images/releases/v0.9.0/hide-completed.gif"
+      <p>Hover your mouse over pomodoros to see the detailed log of your work. We'll see how to visualize it better in the
+      upcoming versions.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/93">#93</a>
+      </sup>
+    image: "../images/releases/v0.10.0/tooltips.png"
   i:
     style: "style1"
-    title : "Tooltips and shortcuts"
+    title : "Contact Us menu"
     content: |
-      <p>All toolbar buttons and icons now have tooltips with shortcuts in them.</p>
-    image: "../images/releases/v0.9.0/tooltips.gif"
+      <p>You can now provide your feedback, request improvements and report problems directly from Flowkeeper's main menu.
+      Your feedback is greatly appreciated!</p>
+      <ul>
+      <li><a href="https://github.com/flowkeeper-org/fk-desktop/issues">GitHub</a></li>
+      <li><a href="https://discord.gg/MCbxbmjv">Discord</a></li>
+      <li><a href="https://www.reddit.com/r/Flowkeeper">Reddit</a></li>
+      <li><a href="https://www.linkedin.com/company/flowkeeper-org">LinkedIn</a></li>
+      <li><a href="https://t.me/flowkeeper_org">Telegram</a></li>
+      <li><a href="mailto:contact@flowkeeper.org">Email</a></li>
+      </ul>
+      <p>On Flowkeeper main page you can also subscribe to out newsletter.</p>
+    image: "../images/releases/v0.10.0/contact-us.png"
   j:
     style: "style1 orient-right"
     title : "Running external programs"
