@@ -1,0 +1,18 @@
+<!-- Testimonials -->
+<section class="wrapper style1 align-center" {{ with .id }} id="{{ . }}"{{ end }}>
+    <div class="inner">
+        <div id="testimonial-slider" class="owl-carousel owl-theme testimonial">
+            {{ range .items }}
+                <div class="item">
+                    <div class="pic">
+                        <img data-src="{{ .avatar }}" class="owl-lazy" alt="">
+                    </div>
+                    <div class="description">{{ .text }}</div>
+                    <div class="footer">
+                        -- <a href="{{ .url }}">{{ .name }}</a> | {{ .date }}
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

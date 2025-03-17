@@ -7,7 +7,7 @@
 	{{ if .Site.Params.favicon }}
 	{{ partial "favicon" }}
 	{{ end }}
-	
+
 	<!-- CSS -->
 	{{ if hugo.IsServer }}
 	{{ $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" false) }}
@@ -28,5 +28,33 @@
 	{{ range .Site.Params.asset.fontawesome_css -}}
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{- end }}
+
+	<!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<style>
+		.testimonial{
+			text-align: center;
+		}
+		.testimonial .pic{
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			margin: 0 auto 10px;
+			border: 1px solid #777777;
+			overflow: hidden;
+		}
+		.testimonial .pic img{
+			width: 100%;
+			height: auto;
+		}
+		.testimonial .footer {
+			font-size: 75%;
+		}
+		.testimonial .description {
+			font-style: italic;
+		}
+	</style>
 
 </head>
