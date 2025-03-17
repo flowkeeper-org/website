@@ -1,10 +1,11 @@
 style: "style1 orient-left content-align-left image-position-right"
-title : "Flowkeeper v0.9.x"
+title : "Flowkeeper v0.9.0"
 subtitle: |
   January 5, 2025
 content : |
     <p>In November I received a bunch of useful feedback from people using Flowkeeper. In this release I tried to address 
     as much of it as I could, as well as implement the "reordering" feature, which I wanted to do since ages.</p>
+    <p>← <a href="/v0.8.0">What's new in v0.8.0</a> | <a href="/v0.9.1">What's new in v0.9.1</a> →</p>
 buttons:
   primary:
     label: "GitHub Release"
