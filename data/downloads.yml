@@ -7,6 +7,7 @@ content: |
 style: "style1 medium"
 downloads:
   - os: "Windows"
+    id: "windows"
     intro: "Flowkeeper is tested on Windows 10, 11 and Server 2019. It does NOT require admin rights to install and execute."
     files:
       #- title: Flowkeeper in Microsoft Store
@@ -48,6 +49,7 @@ downloads:
       - name: pyinstaller-standalone.zip
         display: Standalone ZIP, PyInstaller
   - os: "macOS"
+    id: "macos"
     intro: "We test Flowkeeper on an Intel MacBook Pro running macOS Ventura 13.x and on an M1 iMac running the latest macOS Sonoma 14.x."
     files:
       #- title: Flowkeeper in AppStore
@@ -70,7 +72,24 @@ downloads:
         #content: |
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
+    more_os:
+      - name: macos-13
+        display: macOS 13, x86
+      - name: macos-14
+        display: macOS 14, ARM
+      - name: macos-15
+        display: macOS 15, ARM
+    more_artifact:
+      - name: nuitka-installer.dmg
+        display: DMG installer, Nuitka
+      - name: pyinstaller-installer.dmg
+        display: DMG installer, PyInstaller
+      - name: nuitka-standalone.zip
+        display: Standalone ZIP, Nuitka
+      - name: pyinstaller-standalone.zip
+        display: Standalone ZIP, PyInstaller
   - os: "Linux (x86)"
+    id: "linux-x86"
     intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu and Fefora running GNOME and KDE on Wayland and XOrg"
     files:
       - title: Flowkeeper on Flathub
@@ -124,7 +143,30 @@ downloads:
           #openSUSE Tumbleweed
           #$ zypper addrepo https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
           #$ zypper install flowkeeper
+    more_os:
+      - name: ubuntu-20.04
+        display: Ubuntu 20.04, x86
+      - name: ubuntu-22.04
+        display: Ubuntu 22.04, x86
+      - name: ubuntu-24.04
+        display: Ubuntu 24.04, x86
+    more_artifact:
+      - name: nuitka-package.deb
+        display: DEB "fat" package, Nuitka
+      - name: pyinstaller-package.deb
+        display: DEB "fat" package, PyInstaller
+      - name: pyinstaller-min-package.deb
+        display: DEB "minimal" package
+      - name: nuitka-portable
+        display: Portable executable, Nuitka
+      - name: pyinstaller-portable
+        display: Portable executable, PyInstaller
+      - name: nuitka-standalone.zip
+        display: Standalone ZIP, Nuitka
+      - name: pyinstaller-standalone.zip
+        display: Standalone ZIP, PyInstaller
   - os: "Linux (arm64)"
+    id: "linux-arm"
     intro: "This is the experimental installer, tested on Ubuntu 24.04"
     files:
       - title: DEB package
@@ -137,3 +179,23 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-arm64
+    more_os:
+      - name: ubuntu-22.04-arm
+        display: Ubuntu 22.04, ARM
+      - name: ubuntu-24.04-arm
+        display: Ubuntu 24.04, ARM
+    more_artifact:
+      - name: nuitka-package.deb
+        display: DEB "fat" package, Nuitka
+      - name: pyinstaller-package.deb
+        display: DEB "fat" package, PyInstaller
+      - name: pyinstaller-min-package.deb
+        display: DEB "minimal" package
+      - name: nuitka-portable
+        display: Portable executable, Nuitka
+      - name: pyinstaller-portable
+        display: Portable executable, PyInstaller
+      - name: nuitka-standalone.zip
+        display: Standalone ZIP, Nuitka
+      - name: pyinstaller-standalone.zip
+        display: Standalone ZIP, PyInstaller

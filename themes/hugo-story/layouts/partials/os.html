@@ -23,17 +23,8 @@
                 </li>
             {{ end }}
             </ul>
-            <a href="#" id="more-{{ .os }}">More...</a>
-            <script>
-                console.log('jQuery:', jQuery, $);
-                const el = jQuery("#more-{{ .os }}");
-                el.on('click', function() {
-                    console.log('Clicked {{ .os }}');
-                    jQuery("table-{{ .os }}").toggle();
-                });
-                el.hide();
-            </script>
-            <table id="table-{{ .os }}">
+            <a href="#" class="download-more" id="download-more-{{ .id }}">More...</a>
+            <table class="download-table" id="download-table-{{ .id }}">
                 <thead>
                     <tr>
                         <th></th>
@@ -45,10 +36,14 @@
                 <tbody>
                     {{ $more_os := .more_os }}
                     {{ range .more_artifact }}
+                    {{ $more_artifact := . }}
                     <tr>
                         <td>{{ .display }}</td>
                         {{ range $more_os }}
-                        <th><i class="fa-light fa-download"></i></th>
+                        <td>
+                            <a href="#" id="download-more-link-{{ .name }}-{{ $more_artifact.name }}" class="download-more-link"><i class="fa-light fa-download"></i></a>
+                            <span>Loading...</span>
+                        </td>
                         {{ end }}
                     </tr>
                     {{ end }}
