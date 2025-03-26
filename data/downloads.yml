@@ -17,14 +17,36 @@ downloads:
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
+        section: main
       - title: Portable exe
         asset: flowkeeper-exe
         size: N/A
         type: file
         href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.exe
+        section: main
       #- title: Installation instructions
         #type: link
         #href: http://example.com
+    more_os:
+      - name: windows-2019
+        display: Windows 10 or Windows Server 2019, x86
+      - name: windows-2022
+        display: Windows 11 or Windows Server 2022, x86
+      - name: windows-2025
+        display: Windows 11 or Windows Server 2025, x86
+    more_artifact:
+      - name: nuitka-installer.exe
+        display: Installer, Nuitka
+      - name: pyinstaller-installer.exe
+        display: Installer, PyInstaller
+      - name: nuitka-portable.exe
+        display: Portable EXE, Nuitka
+      - name: pyinstaller-portable.exe
+        display: Portable EXE, PyInstaller
+      - name: nuitka-standalone.zip
+        display: Standalone ZIP, Nuitka
+      - name: pyinstaller-standalone.zip
+        display: Standalone ZIP, PyInstaller
   - os: "macOS"
     intro: "We test Flowkeeper on an Intel MacBook Pro running macOS Ventura 13.x and on an M1 iMac running the latest macOS Sonoma 14.x."
     files:

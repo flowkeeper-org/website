@@ -23,5 +23,36 @@
                 </li>
             {{ end }}
             </ul>
-        </div>
+            <a href="#" id="more-{{ .os }}">More...</a>
+            <script>
+                console.log('jQuery:', jQuery, $);
+                const el = jQuery("#more-{{ .os }}");
+                el.on('click', function() {
+                    console.log('Clicked {{ .os }}');
+                    jQuery("table-{{ .os }}").toggle();
+                });
+                el.hide();
+            </script>
+            <table id="table-{{ .os }}">
+                <thead>
+                    <tr>
+                        <th></th>
+                        {{ range .more_os }}
+                        <th>{{ .display }}</th>
+                        {{ end }}
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ $more_os := .more_os }}
+                    {{ range .more_artifact }}
+                    <tr>
+                        <td>{{ .display }}</td>
+                        {{ range $more_os }}
+                        <th><i class="fa-light fa-download"></i></th>
+                        {{ end }}
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+      </div>
     </section>
