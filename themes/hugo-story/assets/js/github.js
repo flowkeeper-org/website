@@ -2,10 +2,10 @@
 	$('.download-more').each(function(i, el) {
 		const moreButton = $(el);
 		const moreTable = $('#' + el.id.replace('-more-', '-table-'));
-		console.log('Each', moreButton, moreTable);
+		// console.log('Each', moreButton, moreTable);
 		moreButton.on('click', function(e) {
 			e.preventDefault();
-			console.log('Clicked', el);
+			// console.log('Clicked', el);
 			moreTable.toggle("fast");
 		});
 		moreTable.hide();
@@ -18,7 +18,7 @@
 			const release = json['name'];
 			const version = json['tag_name'].replace('v', '');
 			const assetPrefix = 'flowkeeper-' + version.replaceAll('.', '-') + '-';
-			console.log('version', assetPrefix);
+			// console.log('version', assetPrefix);
 			const when = json['published_at'].split('T')[0];
 			const dict = {};
 			$(`#downloads-title`).text(`Download Flowkeeper ${release}`);
@@ -39,12 +39,12 @@
 				$(`#size-${elementSuffix}`).text(`(${sizeText})`);
 				dict[asset['name'].replace(`flowkeeper-${version}`, 'download-more-link')] = {'url': url, 'size': sizeText, 'count': count};
 			});
-			console.log('Received', dict);
+			// console.log('Received', dict);
 			$('.download-more-link').each(function(i, el) {
 				const moreLink = $(el);
 				const moreSize = moreLink.siblings()[0];
 				const existing = dict[el.id];
-				console.log('Found', existing, el.id);
+				// console.log('Found', existing, el.id);
 				if (existing) {
 					moreLink.attr("href", existing['url']);
 					moreSize.innerHTML = `(${existing['size']})`;
