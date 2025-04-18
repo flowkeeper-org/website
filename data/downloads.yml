@@ -14,25 +14,25 @@ downloads:
         #type: link
         #href: http://example.com
       - title: Installer
-        asset: setup-exe
+        asset: windows-2019-nuitka-installer-exe
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/setup.exe
+        href: "#" 
         section: main
       - title: Portable exe
-        asset: flowkeeper-exe
+        asset: windows-2019-nuitka-portable-exe
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.exe
+        href: "#" 
         section: main
       #- title: Installation instructions
         #type: link
         #href: http://example.com
     more_os:
       - name: windows-2019
-        display: Windows 10 or Windows Server 2019, x86
+        display: Windows 10 1809 or Windows Server 2019, x86
       - name: windows-2022
-        display: Windows 11 or Windows Server 2022, x86
+        display: Windows 10 21H2 or Windows Server 2022, x86
       - name: windows-2025
         display: Windows 11 or Windows Server 2025, x86
     more_artifact:
@@ -56,15 +56,15 @@ downloads:
         #type: link
         #href: http://example.com
       - title: DMG installer for Apple silicon (2020+)
-        asset: flowkeeper-dmg
+        asset: macos-15-nuitka-installer-dmg
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper.dmg
+        href: "#" 
       - title: DMG installer for x86 (before 2020)
-        asset: flowkeeper-x86-dmg
+        asset: macos-13-pyinstaller-installer-dmg
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-x86.dmg
+        href: "#" 
       #- title: Installation instructions
         #type: link
         #href: http://example.com
@@ -95,22 +95,25 @@ downloads:
       - title: Flowkeeper on Flathub
         type: link
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
+      - title: Flowkeeper in AUR (Arch Linux)
+        type: link
+        href: https://aur.archlinux.org/packages/flowkeeper-bin
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
       #-title: Flowkeeper in OBS
         #type: link
         #href
-      - title: DEB package
-        asset: flowkeeper-deb
+      - title: Minimal DEB package (run 'apt-get -f install' after dpkg -i)
+        asset: ubuntu-24-04-pyinstaller-min-package-deb
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.deb
-      - title: DEB package for legacy systems, i.e. Ubuntu 20.04 and Debian 11
-        asset: flowkeeper-legacy-deb
+        href: "#" 
+      - title: Fat DEB package with all dependencies
+        asset: ubuntu-24-04-nuitka-package-deb
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-legacy.deb
+        href: "#" 
       #- title: RPM package
         #size: 160MB
         #type: file
@@ -120,18 +123,15 @@ downloads:
         #type: file
         #href: http://example.com
       - title: All-in-one binary
-        asset: flowkeeper
+        asset: ubuntu-24-04-nuitka-portable
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper
+        href: "#" 
       - title: Portable archive (.tar.gz)
-        asset: flowkeeper-tar-gz
+        asset: ubuntu-24-04-nuitka-standalone-zip
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper.tar.gz
-      - title: Flowkeeper in AUR (Arch Linux)
-        type: link
-        href: https://aur.archlinux.org/packages/flowkeeper-bin
+        href: "#" 
       #- type: shell
         #content: |
           #Debian and derivatives (Ubuntu, Mint, ...)
@@ -167,18 +167,26 @@ downloads:
         display: Standalone ZIP, PyInstaller
   - os: "Linux (arm64)"
     id: "linux-arm"
-    intro: "This is the experimental installer, tested on Ubuntu 24.04"
+    intro: "This is the experimental installer, built and tested on Ubuntu 24.04"
     files:
-      - title: DEB package
-        asset: flowkeeper-arm64-deb
+      - title: Flowkeeper on Flathub
+        type: link
+        href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
+      - title: Minimal DEB package (run 'apt-get -f install' after dpkg -i)
+        asset: ubuntu-24-04-arm-pyinstaller-min-package-deb
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/flowkeeper-arm64.deb
+        href: "#" 
+      - title: Fat DEB package with all dependencies
+        asset: ubuntu-24-04-arm-nuitka-package-deb
+        size: N/A
+        type: file
+        href: "#" 
       - title: All-in-one binary
-        asset: flowkeeper-arm64
+        asset: ubuntu-24-04-arm-nuitka-portable
         size: N/A
         type: file
-        href: https://github.com/flowkeeper-org/fk-desktop/releases/latest/download/Flowkeeper-arm64
+        href: "#" 
     more_os:
       - name: ubuntu-22.04-arm
         display: Ubuntu 22.04, ARM
