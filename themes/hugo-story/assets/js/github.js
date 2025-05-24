@@ -93,7 +93,7 @@ According to VirusTotal scan on the ${date}, some of the antiviruses detect this
 <p class="align-left" style="font-size: 1rem; font-weight: 300;">If you use one of those products, 
 then we recommend you to download an alternative Flowkeeper build.</p>
 <p class="align-left" style="font-size: 1rem; font-weight: 300;">We apologize for this inconvenience! 
-We constantly report those false positives to the corresponding software vendors, but it is an uphill
+We constantly report those false positives to the corresponding software vendors, but we fight an uphill
 battle, as there are literally hundreds of those, and their malware detection heuristics change 
 constantly.</p>`,
 						    icon: microsoftDetected ? "warning" : "info",
