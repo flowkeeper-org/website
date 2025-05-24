@@ -12,7 +12,7 @@
 	});
 
 	//fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/latest")
-	fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/207595463")
+	fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/218292687")
 		.then(resp => resp.json())
 		.then(json => {
 			const release = json['name'];
@@ -39,10 +39,10 @@
 				$(`#size-${elementSuffix}`).text(`(${sizeText})`);
 				dict[asset['name'].replace(`flowkeeper-${version}`, 'download-more-link')] = {'url': url, 'size': sizeText, 'count': count};
 			});
-			// console.log('Received', dict);
+
 			$('.download-more-link').each(function(i, el) {
 				const moreLink = $(el);
-				const moreSize = moreLink.siblings()[0];
+				const moreSize = moreLink.siblings()[0];  // This is <span>Loading...</span> in os.html
 				const existing = dict[el.id];
 				// console.log('Found', existing, el.id);
 				if (existing) {
@@ -51,6 +51,56 @@
 				} else {
 					moreLink.hide();
 					moreSize.innerHTML = 'N/A';
+				}
+			});
+		});
+})(jQuery);
+
+(async function ($) {
+	const links = {};
+
+	$('.download-more-warning').each(function(i, el) {
+		const m = el.id.match(/download-more-warning-(windows-.+)\..+/);
+		if (m) {
+			links[m[1]] = $(el);
+		}
+	});
+
+	fetch('/vtscan-warnings/v0.10.0.json')
+		.then(resp => resp.json())
+		.then(json => {
+			Object.keys(json).forEach(asset => {
+				const m = asset.match(/flowkeeper-.+-(windows-.+)\..+/);
+				if (m && links[m[1]] && Object.keys(json[asset]).length > 0) {
+					const microsoftDetected = json[asset]['Microsoft'];
+					const warningLink = links[m[1]];
+					const date = new Date(Object.values(json[asset])[0]['date']).toLocaleString();
+					warningLink.attr('href', `#modal-${m[1]}`);
+					warningLink.css('color', microsoftDetected ? 'orange' : '#1E90FF');
+					$(warningLink.children()[microsoftDetected ? 0 : 1]).hide();
+					warningLink.click(function (e) {
+						e.preventDefault();
+						let html = '';
+						Object.keys(json[asset]).forEach(av => {
+							const result = json[asset][av];
+							html += `<li><strong ${av === 'Microsoft' ? 'style="color: red;"' : ''}>${av}</strong>: ${result['details']}</li>`
+						});
+						Swal.fire({
+						    title: "Antivirus false positives",
+						    html: `<p class="align-left" style="font-size: 1rem; font-weight: 300;">
+According to VirusTotal scan on the ${date}, some of the antiviruses detect this file as malware: 
+<ul class="align-left" style="font-size: 1rem; font-weight: 300;">${html}</ul>
+<p class="align-left" style="font-size: 1rem; font-weight: 300;">If you use one of those products, 
+then we recommend you to download an alternative Flowkeeper build.</p>
+<p class="align-left" style="font-size: 1rem; font-weight: 300;">We apologize for this inconvenience! 
+We constantly report those false positives to the corresponding software vendors, but it is an uphill
+battle, as there are literally hundreds of those, and their malware detection heuristics change 
+constantly.</p>`,
+						    icon: microsoftDetected ? "warning" : "info",
+							buttonsStyling: false,
+						});
+					});
+					warningLink.show();
 				}
 			});
 		});

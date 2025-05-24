@@ -41,8 +41,16 @@
                         <td>{{ .display }}</td>
                         {{ range $more_os }}
                         <td>
-                            <a href="#" id="download-more-link-{{ .name }}-{{ $more_artifact.name }}" class="download-more-link"><i class="fa-light fa-download"></i></a>
+                            <a href="#"
+                               id="download-more-link-{{ .name }}-{{ $more_artifact.name }}"
+                               class="download-more-link">
+                                <i class="fa-light fa-download"></i></a>
                             <span>Loading...</span>
+                            <a href="#"
+                               id="download-more-warning-{{ .name }}-{{ $more_artifact.name }}"
+                               class="download-more-warning"
+                               style="color: orange; display: none;">
+                                <i class="fa-light fa-warning"></i><i class="fa-solid fa-warning"></i></a>
                         </td>
                         {{ end }}
                     </tr>

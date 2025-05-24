@@ -10,8 +10,9 @@
 {{ $screenshots := resources.Get "js/screenshots.js" }}
 {{ $owl := resources.Get "js/owl.carousel.min.js" }}
 {{ $testimonials := resources.Get "js/testimonials.js" }}
+{{ $sweetalert := resources.Get "js/sweetalert2.js" }}
 
-{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $github $screenshots $owl $testimonials | resources.Concat "js/bundle.js" | minify }}
+{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $main $github $screenshots $owl $testimonials $sweetalert | resources.Concat "js/bundle.js" | minify }}
 
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
