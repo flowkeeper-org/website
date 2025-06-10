@@ -66,7 +66,7 @@
 		}
 	});
 
-	fetch('/vtscan-warnings/v0.10.0.json')
+	fetch('https://flowkeeper-org.github.io/vt-scan-results/v0.10.0-warnings.json')
 		.then(resp => resp.json())
 		.then(json => {
 			// First, merge standalone EXE results into installer EXE
