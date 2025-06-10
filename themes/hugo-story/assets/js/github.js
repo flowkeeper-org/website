@@ -69,6 +69,25 @@
 	fetch('/vtscan-warnings/v0.10.0.json')
 		.then(resp => resp.json())
 		.then(json => {
+			// First, merge standalone EXE results into installer EXE
+			Object.keys(json).forEach(asset => {
+				const m = asset.match(/(flowkeeper-.+-windows-.+)-installer\.exe/);
+				if (m) {
+					const standalone = `${m[1]}-standalone.exe`;
+					if (json[standalone]) {
+						// console.log(`Will merge ${standalone} into ${asset}`)
+						const source = json[standalone];
+						const target = json[asset];
+						Object.keys(source).forEach(av => {
+							if (!target[av]) {
+								target[av] = source[av];
+							}
+						});
+					}
+				}
+			});
+
+			// Now create links based on the merged data
 			Object.keys(json).forEach(asset => {
 				const m = asset.match(/flowkeeper-.+-(windows-.+)\..+/);
 				if (m && links[m[1]] && Object.keys(json[asset]).length > 0) {
