@@ -127,7 +127,7 @@ downloads:
         size: N/A
         type: file
         href: "#" 
-      - title: Portable archive (.tar.gz)
+      - title: Standalone ZIP archive
         asset: ubuntu-24-04-nuitka-standalone-zip
         size: N/A
         type: file
