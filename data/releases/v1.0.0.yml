@@ -1,7 +1,7 @@
 style: "style1 orient-right content-align-left image-position-left"
 title : "Flowkeeper v1.0.0"
 subtitle: |
-  March 15, 2025
+  June 14, 2025
 content : |
     <p>This version brings Flowkeeper even closer to the original Pomodoro Technique definition from Francesco Cirillo's book.
     Pomodoro interruptions are now handled as the book prescribes, and there is finally support for long breaks. One major
@@ -24,34 +24,6 @@ buttons:
     label: "Downloads"
     link: "/#download"
 features:
-  9:
-    style: "style1 orient-right"
-    title : "Pomodoro by the Book"
-    content: |
-      <p>I realized that what makes Flowkeeper better than other timers is that it sticks to Pomodoro Technique as Francesco
-      Cirillo described in his book. And so I bought the latest edition, read it from A to Z, and tried to adjust Flowkeeper 
-      behavior to match it as closely as possible. Here are some of the notable deviations:</p>
-      <table>
-      <thead>
-      <tr><th>The Book</th><th>Flowkeeper</th></tr>
-      </thead>
-      <tbody>
-      <tr><td>You apply Pomodoro for "organizational activities" like meetings, emails and calls</td><td>You don't estimate such activities in pomodoros and track them as unfocused time instead (see below)</td></tr>
-      <tr><td>Pomodoro is marked completed when it rings, before its short break starts</td><td>Pomodoro is marked completed when its short break ends</td>
-      </tr>
-      <tr><td>Short breaks are flexible, minimum 3 -- 5 minutes, up to 10 minutes</td><td>All short breaks have the same fixed duration (5 minutes by default)</td></tr>
-      <tr><td>Long breaks last 15 to 30 minutes (count down)</td><td>Long breaks can last indefinitely (count up)</td></tr>
-      <tr><td>If you finish work within the first 5 minutes, just ignore it and start next pomodoro</td><td>You'd have to void such pomodoro</td></tr>
-      <tr><td>There are two task lists -- To Do Today and Activity Inventory</td><td>There are Backlogs, which serve all planning purposes</td></tr>
-      <tr><td>You track pomodoro statistics using Records Sheet</td><td>You use a combination of Pomodoro Health and Work Summary</td></tr>
-      <tr><td>You specify activity type, e.g. "Writing" or "Condensing"</td><td>You use tags like #writing or #condensing</td></tr>
-      <tr><td>You differentiate between internal and external interruptions by using different marks (' and -)</td><td>You can provide reasons for interruptions, which all produce the same ' marks</td></tr>
-      <tr><td>Schedule / calendar takes precedence over Pomodoro</td><td>Scheduling is not supported (yet)</td></tr>
-      <tr><td>You highlight the third estimate for retrospective purposes</td><td>Only the second estimate is displayed differently from the first</td></tr>
-      <tr><td>Pomodoro timer produces two types of sounds -- it ticks and rings</td><td>Flowkeeper timer ticks, rings and plays music during short breaks</td></tr>
-      </tbody>
-      </table>
-    image: "../images/pomodoro-book.jpg"
   a:
     style: "style1"
     title : "Tracking unfocused time"
@@ -237,8 +209,8 @@ features:
     style: "style1"
     title : "Flowkeeper CLI [Beta]"
     content: |
-      <p>All Flowkeeper installers now bundle <code>fk</code> binary, which you can use to query and modify Flowkeeper 
-      file database. As of v1.0.0 it only works with Backlogs.</p>
+      <p>Flowkeeper sources now include <code>cli.py</code> (symlinked as "fk" below), which you can use to query and 
+      modify Flowkeeper file database. As of v1.0.0 it only works with Backlogs.</p>
       <p>Try <code>fk backlog --help</code> to see what you can do with it. The most impressive results can be obtained
       by enabling file watching in Flowkeeper (Settings (F10) > Connection > Watch changes). Then, every time you make
       a change via CLI, your running Flowkeeper application will pick it up immediately.</p>
