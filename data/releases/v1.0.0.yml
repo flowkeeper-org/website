@@ -1,0 +1,317 @@
+style: "style1 orient-right content-align-left image-position-left"
+title : "Flowkeeper v1.0.0"
+subtitle: |
+  March 15, 2025
+content : |
+    <p>This version brings Flowkeeper even closer to the original Pomodoro Technique definition from Francesco Cirillo's book.
+    Pomodoro interruptions are now handled as the book prescribes, and there is finally support for long breaks. One major
+    deviation from the Technique in this version is the ability to track unfocused time. As usual there's a bunch of 
+    quality-of-life improvements, bugfixes and better support for Linux.</p>
+    <p>With this release I consider Flowkeeper to be stable and mature enough to call it 
+    "production ready", hence v1.0 🎉 Since 2023 Flowkeeper had been downloaded more than 10,000 times, got some reviews, 
+    and received a whole bunch of overwhelmingly positive and constructive feedback, most of which I addressed.</p>
+    <p>P.S. On a personal note, two months ago I became a dad, and in a couple of days I am turning 40, so 
+    for me this v1.0 comes as a natural part of important changes in my life, all of which have been great so far.
+    Thank you all for using Flowkeeper, I hope it works well for you! As usual -- let me know if you'd like to improve 
+    anything :)</p>
+    <p>Yours, Constantine.</p>
+    <p>← <a href="/v0.9.1">What's new in v0.9.1</a></p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.1"
+  secondary:
+    label: "Downloads"
+    link: "/#download"
+features:
+  9:
+    style: "style1 orient-right"
+    title : "Pomodoro by the Book"
+    content: |
+      <p>I realized that what makes Flowkeeper better than other timers is that it sticks to Pomodoro Technique as Francesco
+      Cirillo described in his book. And so I bought the latest edition, read it from A to Z, and tried to adjust Flowkeeper 
+      behavior to match it as closely as possible. Here are some of the notable deviations:</p>
+      <table>
+      <thead>
+      <tr><th>The Book</th><th>Flowkeeper</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>You apply Pomodoro for "organizational activities" like meetings, emails and calls</td><td>You don't estimate such activities in pomodoros and track them as unfocused time instead (see below)</td></tr>
+      <tr><td>Pomodoro is marked completed when it rings, before its short break starts</td><td>Pomodoro is marked completed when its short break ends</td>
+      </tr>
+      <tr><td>Short breaks are flexible, minimum 3 -- 5 minutes, up to 10 minutes</td><td>All short breaks have the same fixed duration (5 minutes by default)</td></tr>
+      <tr><td>Long breaks last 15 to 30 minutes (count down)</td><td>Long breaks can last indefinitely (count up)</td></tr>
+      <tr><td>If you finish work within the first 5 minutes, just ignore it and start next pomodoro</td><td>You'd have to void such pomodoro</td></tr>
+      <tr><td>There are two task lists -- To Do Today and Activity Inventory</td><td>There are Backlogs, which serve all planning purposes</td></tr>
+      <tr><td>You track pomodoro statistics using Records Sheet</td><td>You use a combination of Pomodoro Health and Work Summary</td></tr>
+      <tr><td>You specify activity type, e.g. "Writing" or "Condensing"</td><td>You use tags like #writing or #condensing</td></tr>
+      <tr><td>You differentiate between internal and external interruptions by using different marks (' and -)</td><td>You can provide reasons for interruptions, which all produce the same ' marks</td></tr>
+      <tr><td>Schedule / calendar takes precedence over Pomodoro</td><td>Scheduling is not supported (yet)</td></tr>
+      <tr><td>You highlight the third estimate for retrospective purposes</td><td>Only the second estimate is displayed differently from the first</td></tr>
+      <tr><td>Pomodoro timer produces two types of sounds -- it ticks and rings</td><td>Flowkeeper timer ticks, rings and plays music during short breaks</td></tr>
+      </tbody>
+      </table>
+    image: "../images/pomodoro-book.jpg"
+  a:
+    style: "style1"
+    title : "Tracking unfocused time"
+    content: |
+      <p>Some activities are not compatible with Pomodoro Technique, or simply do not require deep focus. At the same time,
+      stuff like calls and meetings steals your productivity, so you'd still like to track those, just to know how much damage
+      they do.</p>
+      <p>Try to start a work item with no pomodoros -- this will automatically make it a time tracker.</p>
+      <p>In Tracking mode Flowkeeper counts time up rather than down. You still get your progress indicator, but it functions
+      as a wall clock rather than a kitchen timer.</p>
+      <p>You can start / stop / restart tracking via Ctrl-S / ⌘-S.</p>
+      <p>You can't mix focused (Pomodoro) and unfocused time tracking on the same work item. Also, unfocused time is not counted
+      in Pomodoro Health (F9). Otherwise those Tracker items behave just like the normal Pomodoro ones. For example, they show
+      up in the Work Summary (F3) and can be completed.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/94">#94</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/98">#98</a>
+      </sup>
+    image: "../images/releases/v1.0.0/tracker-items.gif"
+  b:
+    style: "style1 orient-right"
+    title : "Long breaks"
+    content: |
+      <p>Pomodoro Technique defines two types of breaks. The short ones keep you focused while you work on one task, while the
+      long ones allows you to relax and help switching between tasks.</p>
+      <p>Until now Flowkeeper only supported short breaks, ensuring that you are getting some minimal amount of rest between
+      pomodoros needed for <a href="https://modelthinkers.com/mental-model/focused-and-diffuse-thinking">switching between
+      focused and diffused thinking modes</a>. And then it was up to you to decide when you need to take a longer break.</p>
+      <p>In v1.0.0 Flowkeeper suggests you taking a long break after four completed pomodoros, as the Book prescribes.</p>
+      <p>Unlike short breaks the long ones don't have predefined duration, and thus Flowkeeper displays elapsed time, not
+      remaining. There's no music during long breaks. To end a break, you press Ctrl-S / ⌘-S, or click "Stop Tracking Time".</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/53">#53</a>
+      </sup>
+    image: "../images/releases/v1.0.0/long-breaks.gif"
+  c:
+    style: "style1"
+    title : "Working in series"
+    content: |
+      <p>Some Flowkeeper users prefer their Pomodoro fully automated, i.e. next Pomodoro starting automatically after the short
+      break ends. In this version it is implemented as an optional feature, which is disabled by default.</p>
+      <p>The series stops if</p>
+      <ul>
+      <li>There are no more startable pomodoros in the current work item,</li>
+      <li>You voided a Pomodoro,</li>
+      <li>A long break started.</li>
+      </ul>
+      <p>To enable working in series, go to Settings (F10) > Series and breaks.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/53">#53</a>
+      </sup>
+    image: "../images/releases/v1.0.0/series-config.png"
+  d:
+    style: "style1 orient-right"
+    title : "Moving items between backlogs"
+    content: |
+      <p>If you select a backlog and press Ctrl-M / ⌘-M, Flowkeeper will create a new backlog with a copy of incomplete work
+      items from the one you selected.</p>
+      <p>In addition to that, v1.0.0 also implements a way to <i>move</i> work items between backlogs. To move an item, just
+      drag it to a different list.</p>
+      <p>It is useful for filling your daily task list with items from global backlogs, or to finish something you couldn't
+      complete yesterday. This feature makes planning a breeze.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/60">#60</a>
+      </sup>
+    image: "../images/releases/v1.0.0/move-items.gif"
+  e:
+    style: "style1"
+    title : "Recording interruptions"
+    content: |
+      <p>Avoiding interruptions is the key aspect of Pomodoro Technique. The Book is very prescriptive about recording
+      interruptions and doing retrospective analysis on those.</p>
+      <p>Starting with v1.0.0 there's a new "Record Interruption" action when you click the timer widget or press Ctrl-T /
+      ⌘-T. It allows you enter an optional note, and leaves a subtle tick mark ' next to the current Pomodoro.</p>
+      <p>Voiding a Pomodoro records an interruption automatically.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/75">#75</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/92">#92</a>
+      </sup>
+    image: "../images/releases/v1.0.0/interruptions.gif"
+  f:
+    style: "style1 orient-right"
+    title : "Import from GitHub [Beta]"
+    content: |
+      <p>Import from GitHub Issues is now available by pressing Ctrl-I / ⌘-I. It supports both public and private
+      repositories.</p>
+      <p>When you import from GitHub, you can choose to import metadata like assignee or issue state as #tags, so that you
+      can filter by issue labels, for example.</p>
+      <p>It is important to understand how consecutive imports merge with existing data:</p>
+      <ul>
+      <li>Import creates a backlog with the name corresponding to GitHub org/repo, e.g. "flowkeeper-org/fk-desktop". If this
+      backlog already exists, Flowkeeper will try to merge imported data with its content.</li>
+      <li>If it finds a work item that starts with "[id] - [title]", it will consider it the same item. It will rename it,
+      if you chose a different set of tags during the import, but it will not delete this item or create a duplicate. So,
+      if you tracked some time or done some pomodoros on this item -- those will stay.</li>
+      <li>It will create new items which don't exist yet.</li>
+      <li>It won't touch completed items (they are sealed and can't be renamed anyway), and it will never delete anything.</li>
+      </ul>
+      <p>If you execute it against some large repository like facebook/react, this import will push Flowkeeper to its
+      limits, mainly because of hundreds of new tags. If you uncheck tags creation or disable tags altogether in Settings >
+      General > Display #tags, Flowkeeper will handle even thousands of tasks without breaking a sweat.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/125">#125</a>
+      </sup>
+    image: "../images/releases/v1.0.0/import-github.gif"
+  g:
+    style: "style1"
+    title : "Import from CSV [Beta]"
+    content: |
+      <p>Import from CSV is now available by pressing Ctrl-I / ⌘-I. You can choose the field delimiter, as well as specify
+      that your CSV has headers. The CSV file <i>must</i> have three columns -- backlog name, work item name, and work item
+      state ("new" or "completed").</p>
+      <p>It is important to understand how consecutive imports merge with existing data:</p>
+      <ul>
+      <li>Import creates backlogs corresponding to the first column in the file. If a backlog with this name already exists --
+      it will be reused.</li>
+      <li>If it finds an existing backlog / work item combination, it will leave it as-is, except if you marked it as completed
+      in the CSV file -- then it will complete the corresponding item in Flowkeeper.</li>
+      <li>If you rename something in the CSV and re-import, Flowkeeper will create new items. It won't rename existing items.
+      If you delete rows from CSV, the import will simply ignore it.</li>
+      <li>It won't touch completed items (they are sealed and can't be renamed anyway), and it will never delete anything.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/125">#125</a>
+      </sup>
+    image: "../images/releases/v1.0.0/import-csv.gif"
+  h:
+    style: "style1 orient-right"
+    title : "Detailed tooltips"
+    content: |
+      <p>Hover your mouse over pomodoros to see the detailed log of your work. We'll see how to visualize it better in the
+      upcoming versions.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/93">#93</a>
+      </sup>
+    image: "../images/releases/v1.0.0/tooltips.png"
+  i:
+    style: "style1"
+    title : "Contact Us menu"
+    content: |
+      <p>You can now provide your feedback, request improvements and report problems directly from Flowkeeper's main menu.
+      Your feedback is greatly appreciated!</p>
+      <ul>
+      <li><a href="https://github.com/flowkeeper-org/fk-desktop/issues">GitHub</a></li>
+      <li><a href="https://discord.gg/MCbxbmjv">Discord</a></li>
+      <li><a href="https://www.reddit.com/r/Flowkeeper">Reddit</a></li>
+      <li><a href="https://www.linkedin.com/company/flowkeeper-org">LinkedIn</a></li>
+      <li><a href="https://t.me/flowkeeper_org">Telegram</a></li>
+      <li><a href="mailto:contact@flowkeeper.org">Email</a></li>
+      </ul>
+      <p>On Flowkeeper main page you can also subscribe to out newsletter.</p>
+    image: "../images/releases/v1.0.0/contact-us.png"
+    title : "Flowkeeper on Flathub"
+    content: |
+      <p>Starting with v1.0.0 you can install Flowkeeper from
+      <a href="https://flathub.org/apps/org.flowkeeper.Flowkeeper">Flathub</a>, both for x86 and ARM architectures:</p>
+      <pre>$ flatpak install flathub org.flowkeeper.Flowkeeper
+      $ flatpak run org.flowkeeper.Flowkeeper</pre>
+      <p></p><p>The application is securely sandboxed and works through XDG Desktop Portals, which was tested on GNOME and KDE.
+      On Flatpak-friendly distros like openSUSE you can also find it in KDE Discover.</p>
+      <p>One great thing about Flatpak is that it will keep your Flowkeeper up to date.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/63">#63</a>
+      </sup>
+    image: "../images/releases/v1.0.0/install-discover.png"
+  j:
+    style: "style1 orient-right"
+    title : "OpenSUSE repository"
+    content: |
+      <p>Thanks to the awesome <a href="https://build.opensuse.org/package/show/home:flowkeeper/flowkeeper">openSUSE Build 
+      Service</a> I can now provide Flowkeeper repos for most of the mainstream Linux distributions, starting with 
+      openSUSE Tumbleweed. To install Flowkeeper execute:</p>
+      <pre>$ zypper addrepo https://download.opensuse.org/repositories/home:
+      /flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
+      $ zypper install flowkeeper</pre>
+      <p></p><p>Support for Debian, Ubuntu and Fedora repos is coming soon! It will become the recommended way to install
+      Flowkeeper on Linux.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/127">#127</a>
+      </sup>
+    image: "../images/releases/v1.0.0/install-obs.png"
+  k:
+    style: "style1"
+    title : "Flowkeeper CLI [Beta]"
+    content: |
+      <p>All Flowkeeper installers now bundle <code>fk</code> binary, which you can use to query and modify Flowkeeper 
+      file database. As of v1.0.0 it only works with Backlogs.</p>
+      <p>Try <code>fk backlog --help</code> to see what you can do with it. The most impressive results can be obtained
+      by enabling file watching in Flowkeeper (Settings (F10) > Connection > Watch changes). Then, every time you make
+      a change via CLI, your running Flowkeeper application will pick it up immediately.</p>
+      <p>It is still in experimental state and is not added to the PATH automatically. In the future releases I
+      shall extend its functionality to support work items, timer state, import/export, statistics, and more.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/46">#46</a>
+      </sup>
+    image: "../images/releases/v1.0.0/fk-cli.gif"
+  l:
+    style: "style1 orient-right"
+    title : "Daily VirusTotal scan (+ little rant)"
+    content: |
+      <p>I regularly receive complaints about Flowkeeper being reported as malware by Microsoft Defender.
+      Not only this is annoying, but also hurts Flowkeeper's image. I invested A LOT of time to setup a fully
+      transparent build chain for Flowkeeper, to sign it with a proper EV certificate and to submit it to
+      Microsoft for analysis...</p>
+      <p>And all that effort is rendered useless by antivirus' constantly mutating (presumably AI-based) 
+      malware detection heuristics. Check it yourself -- <a href="https://github.com/flowkeeper-org/av-scan/commits/main/vt-scan-results/v1.0.0-all.json">it changes literally every day</a>!</p>
+      <p>At first I tried submitting Flowkeeper diligently as a "false positive" to AV vendors (there are
+      dozens of them), but half of them don't respond, and the new ones emerge. For a single person doing it
+      is fighting an uphill battle.</p>
+      <p>So now, starting with v1.0.0 I changed my strategy -- I will only submit Flowkeeper to Microsoft 
+      if Defender detects it as malware, and I will ignore other AV vendors. Instead I implemented a nightly
+      AV scan, which leverages <a href="https://www.virustotal.com/">VirusTotal's great service</a>. The
+      Downloads page on flowkeeper.org is updated with those scan results automatically. You can see the
+      list of "false positive" detections if you select Windows > More... and then click on a warning triangle.</p>
+      <p>If you use one of those products, then I recommend you to download an alternative Flowkeeper Windows 
+      build (luckily we now have 18 versions of those!) or submit the corresponding binary as a false positive
+      yourself.</p>
+      <p>I apologize for this inconvenience, but I think I've done pretty much everything I could at this stage. 
+      It is what it is.</p>
+    image: "../images/releases/v1.0.0/virustotal-scan.png"
+  m:
+    style: "style1 orient-left"
+    title : "Miscellaneous improvements"
+    content: |
+      <p>Some of the improvements are less visible, yet they still took some time to implement, so let's list them 
+      here:</p>
+      <ul>
+      <li>There are new Linux binaries for ARM / aarch64.</li>
+      <li>AppImage fat binary is now available for download.</li>
+      <li>Standard Linux / Windows / macOS directories for data files and logs are now used by default for all new 
+      installations.</li>
+      <li>New font selector for macOS, which supports Apple system font.</li>
+      <li>Flowkeeper window now hides automatically on auto-start.</li>
+      <li>Added support for the latest Qt 6.8.x.</li>
+      <li>Performance improvements.</li>
+      <li>Updated documentation in GitHub.</li>
+      <li>Unit test code coverage increased to 90%.</li>
+      <li>Complete drag & drop rewrite provides smoother user experience.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/65">#65,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/102">#102,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/113">#113,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/130">#130</a>
+      </sup>
+    image: "../images/releases/v1.0.0/standard-dirs.png"
+  o:
+    style: "style1"
+    title : "Bugfixes"
+    content: |
+      <p>Last but not least, I fixed all bugs from GitHub Issues I could reproduce:</p>
+      <ul>
+      <li>Selecting directory as log file.</li>
+      <li>Window icon on Wayland.</li>
+      <li>Line breaks in work items and backlogs.</li>
+      <li>Changing audio devices while Flowkeeper is running.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/65">#108,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/102">#110,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/113">#120,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/130">#132</a>
+      </sup>

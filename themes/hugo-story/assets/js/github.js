@@ -12,7 +12,7 @@
 	});
 
 	//fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/latest")
-	fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/218292687")
+	fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/225331537")
 		.then(resp => resp.json())
 		.then(json => {
 			const release = json['name'];
@@ -66,10 +66,12 @@
 		}
 	});
 
-	fetch('https://flowkeeper-org.github.io/av-scan/vt-scan-results/v0.10.0-warnings.json')
+	fetch('https://flowkeeper-org.github.io/av-scan/vt-scan-results/v1.0.0-warnings.json')
 		.then(resp => resp.json())
 		.then(json => {
+			const date = new Date(json['date']).toLocaleString();
 			// First, merge standalone EXE results into installer EXE
+			json = json['results'];
 			Object.keys(json).forEach(asset => {
 				const m = asset.match(/(flowkeeper-.+-windows-.+)-installer\.exe/);
 				if (m) {
@@ -93,7 +95,6 @@
 				if (m && links[m[1]] && Object.keys(json[asset]).length > 0) {
 					const microsoftDetected = json[asset]['Microsoft'];
 					const warningLink = links[m[1]];
-					const date = new Date(Object.values(json[asset])[0]['date']).toLocaleString();
 					warningLink.attr('href', `#modal-${m[1]}`);
 					warningLink.css('color', microsoftDetected ? 'orange' : '#1E90FF');
 					$(warningLink.children()[microsoftDetected ? 0 : 1]).hide();
