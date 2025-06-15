@@ -5,7 +5,7 @@ subtitle: |
 content : |
     <p>In November I received a bunch of useful feedback from people using Flowkeeper. In this release I tried to address 
     as much of it as I could, as well as implement the "reordering" feature, which I wanted to do since ages.</p>
-    <p>← <a href="/v0.9.0">What's new in v0.9.0</a> | <a href="/v0.10.0">What's new in v0.10.0</a> →</p>
+    <p>← <a href="/v0.9.0">What's new in v0.9.0</a> | <a href="/v1.0.0">What's new in v1.0.0</a> →</p>
 buttons:
   primary:
     label: "GitHub Release"

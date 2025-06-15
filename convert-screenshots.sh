@@ -34,8 +34,12 @@ getcrop() {
 	fi
 	if [ "$size" = "4480x2520" ]; then
 		crop="3840x2160+320+180"
+	elif [ "$size" = "3360x2100" ]; then
+		crop="2560x1600+400+300"
 	elif [ "$size" = "1920x1080" ]; then
 		crop="1500x980+200+50"
+	elif [ "$size" = "2880x1800" ]; then
+		crop="2458x1536+211+132"
 	else
 		crop="$size+0+0"
 	fi

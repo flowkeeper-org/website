@@ -19,5 +19,8 @@ buttons:
   primary:
     label : "Download"
     link : "#download"
+  secondary:
+    label : "Sponsor"
+    link : "https://github.com/sponsors/flowkeeper-org"
 image : "images/fk-imac.jpg"
 

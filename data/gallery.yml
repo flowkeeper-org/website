@@ -1,6 +1,6 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
-release: "v0.9.0"
+release: "v1.0.0"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
@@ -27,19 +27,27 @@ pictures:
 
   - title: "Dark Theme"
     content: "Every app should have a dark theme!"
-    image: "08-dark-theme"
+    image: "19-main-dark"
 
   - title: "Light Theme"
     content: "The light theme for the purists."
-    image: "09-light-theme"
+    image: "18-main-light"
 
   - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
-    image: "12-export"
+    image: "11-import"
+
+  - title: "Stats -- Week"
+    content: "You can see how your are progressing through the last 7 days."
+    image: "13-stats-week"
 
   - title: "Stats -- Month"
     content: "You can see how your are progressing through the last 30 days."
     image: "14-stats-month"
+
+  - title: "Stats -- Year"
+    content: "You can see how your are progressing through the last 12 months."
+    image: "15-stats-year"
 
   - title: "Work Summary"
     content: "Generate a summary of the work you did and export it in a variety of formats, including Markdown, CSV, JSON, etc. It's a useful feature for filling timesheets and exporting data to digital logs."
@@ -48,6 +56,14 @@ pictures:
   - title: "Integrations"
     content: "You can configure Flowkeeper to execute external programs on each and every event. This is a powerful facility, allowing to integrate Flowkeeper with other systems in real time."
     image: "21-settings-integration"
+
+  - title: "Tray icons"
+    content: "You can choose tray icon look and feel."
+    image: "27-tray-icon-types"
+
+  - title: "Timer widgets"
+    content: "You can choose a focus widget look and feel."
+    image: "26-focus-window-types"
 
   - title: "UI Customization"
     content: "You can configure Flowkeeper UI for your liking. Meet my cat Medallion."
