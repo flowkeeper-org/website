@@ -20,7 +20,7 @@ downloads:
         href: "#" 
         section: main
       - title: Portable exe
-        asset: windows-2025-pyinstaller-portable-exe
+        asset: windows-2025-nuitka-portable-exe
         size: N/A
         type: file
         href: "#" 
