@@ -122,11 +122,16 @@ downloads:
         #size: 160MB
         #type: file
         #href: http://example.com
-      - title: All-in-one binary
-        asset: ubuntu-24-04-nuitka-portable
+      - title: AppImage
+        asset: ubuntu-24-04-nuitka-appimage
         size: N/A
         type: file
         href: "#" 
+      - title: All-in-one native binary
+        asset: ubuntu-24-04-nuitka-portable
+        size: N/A
+        type: file
+        href: "#"
       - title: Standalone ZIP archive
         asset: ubuntu-24-04-nuitka-standalone-zip
         size: N/A
@@ -155,10 +160,12 @@ downloads:
         display: DEB "fat" package, PyInstaller
       - name: pyinstaller-min-package.deb
         display: DEB "minimal" package
+      - name: nuitka.AppImage
+        display: AppImage, Nuitka
       - name: nuitka-portable
-        display: Portable executable, Nuitka
+        display: All-in-one native binary, Nuitka
       - name: pyinstaller-portable
-        display: Portable executable, PyInstaller
+        display: All-in-one native binary, PyInstaller
       - name: nuitka-standalone.zip
         display: Standalone ZIP, Nuitka
       - name: pyinstaller-standalone.zip
