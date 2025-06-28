@@ -8,7 +8,7 @@ style: "style1 medium"
 downloads:
   - os: "Windows"
     id: "windows"
-    intro: "Flowkeeper is tested on Windows 10, 11 and Server 2019. It does NOT require admin rights to install and execute."
+    intro: "Flowkeeper is tested on Windows 10, 11 and Server 2022. It does NOT require admin rights to install and execute."
     files:
       #- title: Flowkeeper in Microsoft Store
         #type: link
@@ -90,7 +90,7 @@ downloads:
         display: Standalone ZIP, PyInstaller
   - os: "Linux (x86)"
     id: "linux-x86"
-    intro: "We test Flowkeeper on the latest stable versions of Debian, Ubuntu and Fefora running GNOME and KDE on Wayland and XOrg"
+    intro: "We test Flowkeeper on the latest versions of Debian, Ubuntu, Fefora and openSUSE running GNOME and KDE on Wayland and XOrg"
     files:
       - title: Flowkeeper on Flathub
         type: link
@@ -98,12 +98,17 @@ downloads:
       - title: Flowkeeper in AUR (Arch Linux)
         type: link
         href: https://aur.archlinux.org/packages/flowkeeper-bin
+      - type: shell
+        content: |
+          # openSUSE Tumbleweed
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
+          zypper install flowkeeper
+
+          # Repos for other distros are coming soon
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
-      #-title: Flowkeeper in OBS
-        #type: link
-        #href
       - title: Minimal DEB package (run 'apt install ./<filename>.deb')
         asset: ubuntu-24-04-pyinstaller-min-package-deb
         size: N/A
@@ -137,17 +142,6 @@ downloads:
         size: N/A
         type: file
         href: "#" 
-      #- type: shell
-        #content: |
-          #Debian and derivatives (Ubuntu, Mint, ...)
-          #$ sudo apt install flowkeeper-desktop
-
-          #Fedora and derivatives (CentOs, RHEL, ...)
-          #$ sudo dnf install flowkeeper-desktop
-
-          #openSUSE Tumbleweed
-          #$ zypper addrepo https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
-          #$ zypper install flowkeeper
     more_os:
       - name: ubuntu-22.04
         display: Ubuntu 22.04, x86
@@ -177,6 +171,14 @@ downloads:
       - title: Flowkeeper on Flathub
         type: link
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
+      - type: shell
+        content: |
+          # openSUSE Tumbleweed
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
+          zypper install flowkeeper
+
+          # Repos for other distros are coming soon
       - title: Minimal DEB package (run 'apt-get -f install' after dpkg -i)
         asset: ubuntu-24-04-arm-pyinstaller-min-package-deb
         size: N/A
