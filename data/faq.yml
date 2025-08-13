@@ -30,3 +30,6 @@ questions:
       Flatpak apps are sandboxed and get their own copy of configuration files. Go to Settings > Connection > Browse... and select your old data file.
       The file picker is aware of Flatpak, and automatically grants Flowkeeper access to selected file outside of its sandbox. By the way, that's why
       all file input boxes are grayed out when we run in a sandbox, as you have to use file pickers.
+  - q: My keyboard doesn't work in Flowkeeper on Linux
+    a: |
+      This happens rarely, and seems to be related to the portable binaries built by PyInstaller. Try another version, e.g. AppImage or Flatpak. If it still doesn't work -- try to install libxcb-cursor0, libxcb-keysyms1 and libxcb-icccm4. If it still doesn't work -- please raise an issue on GitHub.
