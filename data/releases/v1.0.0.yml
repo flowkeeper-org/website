@@ -15,7 +15,7 @@ content : |
     Thank you all for using Flowkeeper, I hope it works well for you! As usual -- let me know if you'd like to improve 
     anything :)</p>
     <p>Yours, Constantine.</p>
-    <p>← <a href="/v0.9.1">What's new in v0.9.1</a></p>
+    <p>← <a href="/v0.9.1">What's new in v0.9.1</a> | <a href="/v1.0.1">What's new in v1.0.1</a> →</p></p>
 buttons:
   primary:
     label: "GitHub Release"
