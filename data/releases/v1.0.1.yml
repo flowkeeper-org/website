@@ -1,0 +1,44 @@
+style: "style1 orient-right content-align-left image-position-left"
+title : "Flowkeeper v1.0.1"
+subtitle: |
+  August 15, 2025
+content : |
+    <p>In this release I addressed every single bug in Flowkeeper's GitHub repo. There are no
+    new features, and the only visible change is for completed items (see screenshot below).</p>
+    <p>Yours, Constantine.</p>
+    <p>← <a href="/v1.0.0">What's new in v1.0.0</a></p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.0.1"
+  secondary:
+    label: "Downloads"
+    link: "/#download"
+features:
+  a:
+    style: "style1"
+    title : "Bugfixes"
+    content: |
+      <ul>
+        <li>Miscellaneous font issues.</li>
+        <li>Backlogs toggle icon doesn't change its color on theme change.</li>
+        <li>Voiding a pomodoro that has already finished.</li>
+        <li>Focus mode lost window title on Wayland.</li>
+        <li>Timezone not handled in task tooltips.</li>
+        <li>Tutorial bubbles don't follow underlying windows.</li>
+        <li>Pin/unpin icon is visible on Wayland.</li>
+        <li>Unhandled TypeError while clicking "Surprise me" button repeatedly.</li>
+        <li>"Long break" keeps on triggering while it is deactivated in the configuration.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/136">#136,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/138">#138,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/149">#149,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/152">#152,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/156">#156,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/162">#162,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/185">#185,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/188">#188,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/192">#192,</a>
+      </sup>
+    image: "../images/releases/v1.0.1/completed-items.png"

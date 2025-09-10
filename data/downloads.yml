@@ -29,8 +29,6 @@ downloads:
         #type: link
         #href: http://example.com
     more_os:
-      - name: windows-2019
-        display: Windows 10 1809 or Windows Server 2019, x86
       - name: windows-2022
         display: Windows 10 21H2 or Windows Server 2022, x86
       - name: windows-2025
