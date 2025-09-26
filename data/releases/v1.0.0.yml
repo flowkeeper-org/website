@@ -15,7 +15,7 @@ content : |
     Thank you all for using Flowkeeper, I hope it works well for you! As usual -- let me know if you'd like to improve 
     anything :)</p>
     <p>Yours, Constantine.</p>
-    <p>← <a href="/v0.9.1">What's new in v0.9.1</a> | <a href="/v1.0.1">What's new in v1.0.1</a> →</p></p>
+    <p>← <a href="/v0.9.1">What's new in v0.9.1</a> | <a href="/v1.0.1">What's new in v1.0.1</a> →</p>
 buttons:
   primary:
     label: "GitHub Release"
@@ -264,9 +264,9 @@ features:
       <li>Complete drag & drop rewrite provides smoother user experience.</li>
       </ul>
       <sup>GitHub Issues:
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/65">#65,</a>
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/102">#102,</a>
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/113">#113,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/65">#65</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/102">#102</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/113">#113</a>,
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/130">#130</a>
       </sup>
     image: "../images/releases/v1.0.0/standard-dirs.png"
@@ -282,8 +282,8 @@ features:
       <li>Changing audio devices while Flowkeeper is running.</li>
       </ul>
       <sup>GitHub Issues:
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/108">#108,</a>
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/110">#110,</a>
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/120">#120,</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/108">#108</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/110">#110</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/120">#120</a>,
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/132">#132</a>
       </sup>

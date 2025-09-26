@@ -1,0 +1,28 @@
+style: "style1 orient-right content-align-left image-position-left"
+title : "Flowkeeper v1.0.2"
+subtitle: |
+  September 26, 2025
+content : |
+    <p>This version addresses a couple of new bugs, one of which is quite annoying.</p>
+    <p>← <a href="/v1.0.1">What's new in v1.0.1</a></p>
+buttons:
+  primary:
+    label: "GitHub Release"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.0.2"
+  secondary:
+    label: "Downloads"
+    link: "/#download"
+features:
+  a:
+    style: "style1"
+    title : "Bugfixes"
+    content: |
+      <ul>
+        <li>Can't void a pomodoro or record an interruption in non-latest backlogs.</li>
+        <li>An occasional exception when waking up from sleep.</li>
+      </ul>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/195">#195</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/197">#197</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/199">#199</a>
+      </sup>
