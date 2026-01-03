@@ -93,17 +93,32 @@ downloads:
       - title: Flowkeeper on Flathub
         type: link
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
-      - title: Flowkeeper in AUR (Arch Linux)
-        type: link
-        href: https://aur.archlinux.org/packages/flowkeeper-bin
       - type: shell
         content: |
+          # Fedora 43
+          dnf config-manager addrepo \
+            --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_43/home:flowkeeper.repo
+          dnf install flowkeeper
+
           # openSUSE Tumbleweed
           zypper addrepo --refresh \
             https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
           zypper install flowkeeper
 
+          # openSUSE Slowroll
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Slowroll/home:flowkeeper.repo
+          zypper install flowkeeper
+
+          # openSUSE Leap 16.0
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/16.0/home:flowkeeper.repo
+          zypper install flowkeeper
+
           # Repos for other distros are coming soon
+      - title: Flowkeeper in AUR (Arch Linux)
+        type: link
+        href: https://aur.archlinux.org/packages/flowkeeper-bin
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
@@ -117,14 +132,10 @@ downloads:
         size: N/A
         type: file
         href: "#" 
-      #- title: RPM package
-        #size: 160MB
-        #type: file
-        #href: http://example.com
-      #- title: AppImage
-        #size: 160MB
-        #type: file
-        #href: http://example.com
+      - title: Minimal RPM package (run 'dnf install ./<filename>.rpm')
+        size: 8MB
+        type: file
+        href: https://download.opensuse.org/repositories/home:/flowkeeper/Fedora_43/noarch/flowkeeper-1.0.2-2.1.noarch.rpm
       - title: AppImage
         asset: ubuntu-24-04-nuitka-appimage
         size: N/A
@@ -171,13 +182,28 @@ downloads:
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
       - type: shell
         content: |
+          # Fedora 43
+          dnf config-manager addrepo \
+            --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_43/home:flowkeeper.repo
+          dnf install flowkeeper
+
           # openSUSE Tumbleweed
           zypper addrepo --refresh \
             https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Tumbleweed/home:flowkeeper.repo
           zypper install flowkeeper
 
+          # openSUSE Slowroll
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/openSUSE_Slowroll/home:flowkeeper.repo
+          zypper install flowkeeper
+
+          # openSUSE Leap 16.0
+          zypper addrepo --refresh \
+            https://download.opensuse.org/repositories/home:/flowkeeper/16.0/home:flowkeeper.repo
+          zypper install flowkeeper
+
           # Repos for other distros are coming soon
-      - title: Minimal DEB package (run 'apt-get -f install' after dpkg -i)
+      - title: Minimal DEB package (run 'apt install ./<filename>.deb')
         asset: ubuntu-24-04-arm-pyinstaller-min-package-deb
         size: N/A
         type: file
@@ -187,6 +213,10 @@ downloads:
         size: N/A
         type: file
         href: "#" 
+      - title: Minimal RPM package (run 'dnf install ./<filename>.rpm')
+        size: 8MB
+        type: file
+        href: https://download.opensuse.org/repositories/home:/flowkeeper/Fedora_43/noarch/flowkeeper-1.0.2-2.1.noarch.rpm
       - title: AppImage
         asset: ubuntu-24-04-arm-nuitka-appimage
         size: N/A
@@ -219,3 +249,11 @@ downloads:
         display: Standalone ZIP, Nuitka
       - name: pyinstaller-standalone.zip
         display: Standalone ZIP, PyInstaller
+
+  - os: "Linux (other)"
+    id: "linux-other"
+    intro: "We have builds for i586, RISC-V and ppc64le. Try zypper or dnf commands above, they might work on your machine!"
+    files:
+      - title: openSUSE Build Service
+        type: link
+        href: https://build.opensuse.org/project/show/home:flowkeeper

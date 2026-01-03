@@ -176,20 +176,7 @@ features:
       </ul>
       <p>On Flowkeeper main page you can also subscribe to out newsletter.</p>
     image: "../images/releases/v1.0.0/contact-us.png"
-    title : "Flowkeeper on Flathub"
-    content: |
-      <p>Starting with v1.0.0 you can install Flowkeeper from
-      <a href="https://flathub.org/apps/org.flowkeeper.Flowkeeper">Flathub</a>, both for x86 and ARM architectures:</p>
-      <pre>$ flatpak install flathub org.flowkeeper.Flowkeeper
-      $ flatpak run org.flowkeeper.Flowkeeper</pre>
-      <p></p><p>The application is securely sandboxed and works through XDG Desktop Portals, which was tested on GNOME and KDE.
-      On Flatpak-friendly distros like openSUSE you can also find it in KDE Discover.</p>
-      <p>One great thing about Flatpak is that it will keep your Flowkeeper up to date.</p>
-      <sup>GitHub Issues:
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/63">#63</a>
-      </sup>
-    image: "../images/releases/v1.0.0/install-discover.png"
-  j:
+  k:
     style: "style1 orient-right"
     title : "OpenSUSE repository"
     content: |
@@ -205,7 +192,7 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/127">#127</a>
       </sup>
     image: "../images/releases/v1.0.0/install-obs.png"
-  k:
+  l:
     style: "style1"
     title : "Flowkeeper CLI [Beta]"
     content: |
@@ -220,7 +207,7 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/46">#46</a>
       </sup>
     image: "../images/releases/v1.0.0/fk-cli.gif"
-  l:
+  m:
     style: "style1 orient-right"
     title : "Daily VirusTotal scan (+ little rant)"
     content: |
@@ -244,8 +231,23 @@ features:
       <p>I apologize for this inconvenience, but I think I've done pretty much everything I could at this stage. 
       It is what it is.</p>
     image: "../images/releases/v1.0.0/virustotal-scan.png"
-  m:
-    style: "style1 orient-left"
+  n:
+    style: "style1"
+    title : "Flowkeeper on Flathub"
+    content: |
+      <p>Starting with v1.0.0 you can install Flowkeeper from
+      <a href="https://flathub.org/apps/org.flowkeeper.Flowkeeper">Flathub</a>, both for x86 and ARM architectures:</p>
+      <pre>$ flatpak install flathub org.flowkeeper.Flowkeeper
+      $ flatpak run org.flowkeeper.Flowkeeper</pre>
+      <p></p><p>The application is securely sandboxed and works through XDG Desktop Portals, which was tested on GNOME and KDE.
+      On Flatpak-friendly distros like openSUSE you can also find it in KDE Discover.</p>
+      <p>One great thing about Flatpak is that it will keep your Flowkeeper up to date.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/63">#63</a>
+      </sup>
+    image: "../images/releases/v1.0.0/install-discover.png"
+  o:
+    style: "style1 orient-right"
     title : "Miscellaneous improvements"
     content: |
       <p>Some of the improvements are less visible, yet they still took some time to implement, so let's list them 
@@ -270,7 +272,7 @@ features:
         <a href="https://github.com/flowkeeper-org/fk-desktop/issues/130">#130</a>
       </sup>
     image: "../images/releases/v1.0.0/standard-dirs.png"
-  o:
+  p:
     style: "style1"
     title : "Bugfixes"
     content: |
