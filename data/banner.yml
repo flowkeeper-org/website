@@ -20,7 +20,7 @@ buttons:
     label : "Download"
     link : "#download"
   secondary:
-    label : "Sponsor"
-    link : "https://github.com/sponsors/flowkeeper-org"
+    label : "Contribute"
+    link : "https://github.com/flowkeeper-org/fk-desktop/tree/rc-1.1.0?tab=contributing-ov-file"
 image : "images/fk-imac.jpg"
 

@@ -1,6 +1,6 @@
 title: "Screenshots and Features"
 style: "style1 medium lightbox"
-release: "v1.0.1"
+release: "v1.1.0"
 pictures:
   - title: "Backlogs"
     content: "Organize your work items in backlogs. You can create daily backlogs, todo lists, reminders, ..."
@@ -9,6 +9,14 @@ pictures:
   - title: "Progress Indicators"
     content: "Flowkeeper's colorful progress indicator in system tray is instantly recognizable in a workspace."
     image: "02-pomodoro"
+
+  - title: "Fullscreen Rest Notifications"
+    content: "By default Flowkeeper enables fullscreen rest notifications. It also knocks when you have one minute left, so that you are prepared for the end of pomodoro. Everything is configurable in Settings, of course."
+    image: "28-fullscreen-break"
+
+  - title: "Task Categories Configuration"
+    content: "You can read about built-in task categories, customize them, and create you own ones."
+    image: "30-categories"
 
   - title: "Offline Mode"
     content: |
@@ -32,6 +40,10 @@ pictures:
   - title: "Light Theme"
     content: "The light theme for the purists."
     image: "18-main-light"
+
+  - title: "Classic Timer Display"
+    content: "You can enable classic timer display mode inspired by original Flowkeeper 2010 UI."
+    image: "31-classic-focus-flavor"
 
   - title: "Export and Import"
     content: "You can export Flowkeeper data as a text file, which you can then process and/or import back. This is a recommended way of taking backups."
@@ -68,3 +80,7 @@ pictures:
   - title: "UI Customization"
     content: "You can configure Flowkeeper UI for your liking. Meet my cat Medallion."
     image: "10-customized"
+
+  - title: "About Window"
+    content: "About contains everything you need to know about Flowkeeper as a Free Software program."
+    image: "32-about"
