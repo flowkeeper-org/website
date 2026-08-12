@@ -19,7 +19,7 @@ content : |
 buttons:
   primary:
     label: "GitHub Release"
-    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v0.9.1"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.0.0"
   secondary:
     label: "Downloads"
     link: "/#download"

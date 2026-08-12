@@ -3,8 +3,8 @@ title : "Flowkeeper v1.0.2"
 subtitle: |
   September 26, 2025
 content : |
-    <p>This version addresses a couple of new bugs, one of which is quite annoying.</p>
-    <p>← <a href="/v1.0.1">What's new in v1.0.1</a></p>
+    <p>This version addresses a couple of new bugs, one of which was quite annoying.</p>
+    <p>← <a href="/v1.0.1">What's new in v1.0.1</a> | <a href="/v1.1.0">What's new in v1.1.0</a> →</p>
 buttons:
   primary:
     label: "GitHub Release"

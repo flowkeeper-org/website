@@ -95,6 +95,11 @@ downloads:
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
       - type: shell
         content: |
+          # Fedora 44
+          dnf config-manager addrepo \
+            --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_44/home:flowkeeper.repo
+          dnf install flowkeeper
+
           # Fedora 43
           dnf config-manager addrepo \
             --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_43/home:flowkeeper.repo
@@ -115,10 +120,8 @@ downloads:
             https://download.opensuse.org/repositories/home:/flowkeeper/16.0/home:flowkeeper.repo
           zypper install flowkeeper
 
-          # Repos for other distros are coming soon
-      - title: Flowkeeper in AUR (Arch Linux)
-        type: link
-        href: https://aur.archlinux.org/packages/flowkeeper-bin
+          # Arch
+          yay -Sa flowkeeper-bin
       #- title: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com

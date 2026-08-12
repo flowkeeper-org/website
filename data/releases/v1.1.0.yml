@@ -1,28 +1,150 @@
 style: "style1 orient-right content-align-left image-position-left"
 title : "Flowkeeper v1.1.0"
 subtitle: |
-  September 26, 2025
+  August 12, 2026
 content : |
-    <p>This version addresses a couple of new bugs, one of which is quite annoying.</p>
-    <p>← <a href="/v1.0.1">What's new in v1.0.1</a></p>
+    <p>I am super happy to finally release v1.1! This version has a few noticeable features, and a bunch of small improvements under
+    the hood. Major new features include fullscreen breaks and tasks categorization. The latter will also help me implement cool stuff
+    like hiding backlogs or bi-directional sync with systems like Microsoft To Do.</p>
+    <p>On the personal note, I must admit that this version has been in the works about six months longer than I expected. I could've
+    shipped it much earlier if I asked AI to analyze and document popular task prioritization methods (see below), but I didn't.
+    Instead I conducted my own research, tried <i>all</i> of the methods I found, discarded a few techniques, wrote and rewrote <i>my
+    own</i> findings. I want to make it clear that I refuse using AI in my work and in my private life, and
+    <a href="https://github.com/flowkeeper-org/fk-desktop/blob/rc-1.1.0/CONTRIBUTING.md">will reject</a> AI-generated submissions to
+    Flowkeeper. </p>
+    <p>Intelligence is not a tool, it is what makes us humans. Do not delegate yours to machine.</p>
+    <p>Yours, Constantine.</p>
+    <p>← <a href="/v1.0.2">What's new in v1.0.2</a></p>
 buttons:
   primary:
     label: "GitHub Release"
-    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.0.2"
+    link: "https://github.com/flowkeeper-org/fk-desktop/releases/tag/v1.1.0"
   secondary:
     label: "Downloads"
     link: "/#download"
 features:
   a:
     style: "style1"
-    title : "Bugfixes"
+    title : "Fullscreen breaks"
     content: |
+      <p>Fullscreen breaks are now implemented for all operating systems and enabled by default.</p>
+      <p>They are only displayed on the primary screen, and can be dismissed by clicking or pressing any key. Furthermore,
+      they can be disabled permanently in Settings > Series and breaks > Fullscreen breaks, or by clicking "Do not show this
+      screen again" in the bottom-right corner.</p>
+      <p>Fullscreen notifications are pretty intrusive. To prevent unwanted interruptions, I added a new taskbar notification,
+      which by default fires one minute before the end of each pomodoro. It plays three knocks to remind you about approaching
+      break. This is also configurable, including the audio.</p>
+      <p>By the way, let me know if you'd like an option to disable easy dismissal (might help you enforce Pomodoro discipline).
+      </p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/67">#67</a>
+      </sup>
+    image: "../images/releases/v1.1.0/fullscreen-break.png"
+  b:
+    style: "style1 orient-right"
+    title : "Task categories"
+    content: |
+      <p>So far Flowkeeper helped you execute work that you chose. Now it also helps you <i>choose</i>.</p>
+      <p>All you need to do is pick one of the popular prioritization methods from the list and drag your existing tasks
+      between the groups. If you're unsure, just hover your mouse over a group name to get an explanation. When you create
+      new work items, Flowkeeper asks you for a group first.</p>
+      <p>A single task can be assigned to different categories. Categorization "survives" moving between backlogs and the
+      "New Backlog from Incomplete" action. It is fully supported by export / import mechanism.</p>
+      <p>Categorization can be an alternative to #tags.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/177">#177</a>
+      </sup>
+    image: "../images/releases/v1.1.0/group-description.png"
+  c:
+    style: "style1"
+    title : "Standard categories"
+    content: |
+      <p>I tried most (all?) popular prioritization techniques and documented my findings in Flowkeeper. Press F5 or select
+      "Manage Groups..." from the categorization dropdown menu to see the result.</p>
+      <p>I encourage you to check out those methods, as they can take your individual productivity beyond Pomodoro Technique.
+      At first they may look simple (even trivial!) but if you take it seriously, the effect can be surprisingly powerful.</p>
+      <p>You can modify those groups and even delete them. Those modifications are stored in the data file, so they can be
+      exported and imported on another machine, and will survive settings reset.</p>
+      <p>The list could've been longer, but I discarded some of the systems, such as 3-3-3 Method, Pickle Jar Theory, MoSCoW
+      Method and Warren Buffett's 5/25 Rule, as those were equivalent to the other ones, and I didn't want to waste time
+      describing them...</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/177">#177</a>
+      </sup>
+    image: "../images/releases/v1.1.0/predefined-groups.png"
+  d:
+    style: "style1 orient-right"
+    title : "Custom categories"
+    content: |
+      <p>You can create new categories, reorder, rename and delete them using familiar Flowkeeper UI paradigm. Every work
+      item can be assigned to different categories, which creates a multitude of use cases: Custom prioritization and "sizing"
+      techniques; Grouping tasks by projects; Splitting work between professional and private, long-term and short-term, etc.</p>
+      <p>If you delete a category, all associated work items automatically become uncategorized. If you rename or reorder
+      categories, it doesn't affect the data. In other words, you can safely play with this, and you won't lose anything.</p>
+      <p>You can even delete all standard categories and only leave your custom ones.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/177">#177</a>
+      </sup>
+    image: "../images/releases/v1.1.0/custom-groups.png"
+  e:
+    style: "style1"
+    title : "Mute button"
+    content: |
+      <p>Mute button shows up in both "classic" and "minimal" focus modes while you are in a pomodoro. It allows you
+      to mute timer ticking and rest music temporarily, for example if you need extra focus or if somebody called you.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/151">#151</a>
+      </sup>
+    image: "../images/releases/v1.1.0/mute.png"
+  f:
+    style: "style1 orient-right"
+    title : "Undo task completion"
+    content: |
+      <p>Being able to undo task completion was one of the most popular requests, so here it comes. Select a completed task
+      and press Ctrl+P again.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/55">#55</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/198">#198</a>
+      </sup>
+    image: "../images/releases/v1.1.0/undo-task-completion.png"
+  g:
+    style: "style1"
+    title : "New themes and logo"
+    content: |
+      <p>This release includes a few cosmetic improvements, namely new Flowkeeper logo and a couple of new themes. The new
+      icon conforms to <a href="https://develop.kde.org/hig/icons/colorful/">KDE icon guidelines</a>. The themes are
+      grayscale, with colors closely matching Reddit light and Windows dark color schemes.</p>
+      <sup>GitHub Issues:
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/53">#53</a>
+      </sup>
+    image: "../images/releases/v1.1.0/themes.png"
+  h:
+    style: "style1"
+    title : "Miscellaneous"
+    content: |
+      <p>Minor and technical improvements</p>
       <ul>
-        <li>Can't void a pomodoro or record an interruption in non-latest backlogs.</li>
-        <li>An occasional exception when waking up from sleep.</li>
+        <li>Existing window is activated when another Flowkeeper instance is launched. Settings > General > Single
+        Flowkeeper instance is enabled by default.</li>
+        <li>"About > System info" tab to help reporting issues.</li>
+        <li>Upgraded to the latest Qt 6.11.</li>
+        <li>Fixed a bunch of code quality issues reported by SonarQube.</li>
+        <li>Switched to Nuitka 4.x to compile the binaries.</li>
+        <li>RPM builds and Fedora repos in <a href="https://build.opensuse.org/project/show/home:flowkeeper">OBS</a>.</li>
+        <li>Converted all audio resources to m4a format to reduce the number of bugreports associated with audio.</li>
+        <li>Metadata on workitems and backlogs (huge enabler for future features!)</li>
+        <li>New build configurations: Ubuntu 26.04, macOS 26 and Windows 11 ARM.</li>
+        <li>Snapcraft.io manifest.</li>
+      </ul>
+      <p>Bug fixes</p>
+      <ul>
+        <li>An issue when launching Flowkeeper during a long break.</li>
+        <li>Two bugs with import/export handling of reordering.</li>
+        <li>Drag-and-drop in Wayland.</li>
       </ul>
       <sup>GitHub Issues:
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/195">#195</a>,
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/197">#197</a>,
-        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/199">#199</a>
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/89">#89</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/112">#112</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/127">#127</a>,
+        <a href="https://github.com/flowkeeper-org/fk-desktop/issues/223">#223</a>
       </sup>
