@@ -78,7 +78,8 @@ features:
     content: |
       <p>You can create new categories, reorder, rename and delete them using familiar Flowkeeper UI paradigm. Every work
       item can be assigned to different categories, which creates a multitude of use cases: Custom prioritization and "sizing"
-      techniques; Grouping tasks by projects; Splitting work between professional and private, long-term and short-term, etc.</p>
+      techniques; Grouping tasks by projects or learning subjects; Splitting work between professional and private, long-term
+      and short-term, etc.</p>
       <p>If you delete a category, all associated work items automatically become uncategorized. If you rename or reorder
       categories, it doesn't affect the data. In other words, you can safely play with this, and you won't lose anything.</p>
       <p>You can even delete all standard categories and only leave your custom ones.</p>

@@ -3,12 +3,12 @@ id: download
 content: |
   We build Flowkeeper automatically thanks to GitHub Pipelines.
   Flowkeeper is Open Source software, so you can <a href="https://github.com/flowkeeper-org/fk-desktop#building">build it from source</a> yourself.
-  You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> in GitHub.
+  You can also find <a href="https://github.com/flowkeeper-org/fk-desktop/releases">previous releases</a> and a <a href="https://github.com/flowkeeper-org/fk-desktop/releases/rc">future release candidate (BETA)</a> in GitHub.
 style: "style1 medium"
 downloads:
   - os: "Windows"
     id: "windows"
-    intro: "Flowkeeper is tested on Windows 10, 11 and Server 2022. It does NOT require admin rights to install and execute."
+    intro: "Flowkeeper is tested on Windows 11 and Server 2022. It does NOT require admin rights to install and execute."
     files:
       #- title: Flowkeeper in Microsoft Store
         #type: link
@@ -25,6 +25,18 @@ downloads:
         type: file
         href: "#" 
         section: main
+      - title: Installer for ARM
+        asset: windows-11-arm-pyinstaller-installer-exe
+        size: N/A
+        type: file
+        href: "#"
+        section: main
+      - title: Portable exe for ARM
+        asset: windows-11-arm-pyinstaller-portable-exe
+        size: N/A
+        type: file
+        href: "#"
+        section: main
       #- title: Installation instructions
         #type: link
         #href: http://example.com
@@ -33,6 +45,8 @@ downloads:
         display: Windows 10 21H2 or Windows Server 2022, x86
       - name: windows-2025
         display: Windows 11 or Windows Server 2025, x86
+      - name: windows-11-arm
+        display: Windows 11, ARM
     more_artifact:
       - name: nuitka-installer.exe
         display: Installer, Nuitka
@@ -48,18 +62,18 @@ downloads:
         display: Standalone ZIP, PyInstaller
   - os: "macOS"
     id: "macos"
-    intro: "We test Flowkeeper on an Intel MacBook Pro running macOS Ventura 13.x and on an M1 iMac running the latest macOS Sonoma 14.x."
+    intro: "We test Flowkeeper on an M1 iMac running macOS Sequoia 15.x."
     files:
       #- title: Flowkeeper in AppStore
         #type: link
         #href: http://example.com
       - title: DMG installer for Apple silicon (2020+)
-        asset: macos-15-nuitka-installer-dmg
+        asset: macos-26-nuitka-installer-dmg
         size: N/A
         type: file
         href: "#" 
       - title: DMG installer for x86 (before 2020)
-        asset: macos-13-pyinstaller-installer-dmg
+        asset: macos-26-intel-nuitka-installer-dmg
         size: N/A
         type: file
         href: "#" 
@@ -71,12 +85,16 @@ downloads:
           #Homebrew
           #$ sudo brew install flowkeeper-desktop
     more_os:
-      - name: macos-13
-        display: macOS 13, x86
       - name: macos-14
         display: macOS 14, ARM
       - name: macos-15
         display: macOS 15, ARM
+      - name: macos-26
+        display: macOS 26, ARM
+      - name: macos-15-intel
+        display: macOS 15, x86
+      - name: macos-26-intel
+        display: macOS 26, x86
     more_artifact:
       - name: nuitka-installer.dmg
         display: DMG installer, Nuitka
@@ -88,7 +106,7 @@ downloads:
         display: Standalone ZIP, PyInstaller
   - os: "Linux (x86)"
     id: "linux-x86"
-    intro: "We test Flowkeeper on the latest versions of Debian, Ubuntu, Fefora and openSUSE running GNOME and KDE on Wayland and XOrg"
+    intro: "We test Flowkeeper on the latest versions of Debian, Fefora and openSUSE running GNOME and KDE on Wayland and XOrg"
     files:
       - title: Flowkeeper on Flathub
         type: link
@@ -122,35 +140,35 @@ downloads:
 
           # Arch
           yay -Sa flowkeeper-bin
-      #- title: Flowkeeper on Snapcraft
+      #- title: TODO: Flowkeeper on Snapcraft
         #type: link
         #href: http://example.com
       - title: Minimal DEB package (run 'apt install ./<filename>.deb')
-        asset: ubuntu-24-04-pyinstaller-min-package-deb
+        asset: ubuntu-26-04-pyinstaller-min-package-deb
         size: N/A
         type: file
         href: "#" 
       - title: Fat DEB package with all dependencies
-        asset: ubuntu-24-04-nuitka-package-deb
+        asset: ubuntu-26-04-nuitka-package-deb
         size: N/A
         type: file
         href: "#" 
-      - title: Minimal RPM package (run 'dnf install ./<filename>.rpm')
-        size: 8MB
-        type: file
-        href: https://download.opensuse.org/repositories/home:/flowkeeper/Fedora_43/noarch/flowkeeper-1.0.2-2.1.noarch.rpm
+      # - title: TODO: Minimal RPM package (run 'dnf install ./<filename>.rpm')
+      #   size: 8MB
+      #   type: file
+      #   href: https://download.opensuse.org/repositories/home:/flowkeeper/Fedora_43/noarch/flowkeeper-1.0.2-2.1.noarch.rpm
       - title: AppImage
-        asset: ubuntu-24-04-nuitka-appimage
+        asset: ubuntu-26-04-nuitka-appimage
         size: N/A
         type: file
         href: "#" 
       - title: All-in-one native binary
-        asset: ubuntu-24-04-nuitka-portable
+        asset: ubuntu-26-04-nuitka-portable
         size: N/A
         type: file
         href: "#"
       - title: Standalone ZIP archive
-        asset: ubuntu-24-04-nuitka-standalone-zip
+        asset: ubuntu-26-04-nuitka-standalone-zip
         size: N/A
         type: file
         href: "#" 
@@ -159,6 +177,8 @@ downloads:
         display: Ubuntu 22.04, x86
       - name: ubuntu-24.04
         display: Ubuntu 24.04, x86
+      - name: ubuntu-26.04
+        display: Ubuntu 26.04, x86
     more_artifact:
       - name: nuitka-package.deb
         display: DEB "fat" package, Nuitka
@@ -178,13 +198,18 @@ downloads:
         display: Standalone ZIP, PyInstaller
   - os: "Linux (arm64)"
     id: "linux-arm"
-    intro: "This is the experimental installer, built and tested on Ubuntu 24.04"
+    intro: "This is the experimental installer"
     files:
       - title: Flowkeeper on Flathub
         type: link
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
       - type: shell
         content: |
+          # Fedora 44
+          dnf config-manager addrepo \
+            --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_44/home:flowkeeper.repo
+          dnf install flowkeeper
+
           # Fedora 43
           dnf config-manager addrepo \
             --from-repofile=https://download.opensuse.org/repositories/home:flowkeeper/Fedora_43/home:flowkeeper.repo
@@ -204,15 +229,13 @@ downloads:
           zypper addrepo --refresh \
             https://download.opensuse.org/repositories/home:/flowkeeper/16.0/home:flowkeeper.repo
           zypper install flowkeeper
-
-          # Repos for other distros are coming soon
       - title: Minimal DEB package (run 'apt install ./<filename>.deb')
-        asset: ubuntu-24-04-arm-pyinstaller-min-package-deb
+        asset: ubuntu-26-04-arm-pyinstaller-min-package-deb
         size: N/A
         type: file
         href: "#" 
       - title: Fat DEB package with all dependencies
-        asset: ubuntu-24-04-arm-nuitka-package-deb
+        asset: ubuntu-26-04-arm-nuitka-package-deb
         size: N/A
         type: file
         href: "#" 
@@ -221,12 +244,12 @@ downloads:
         type: file
         href: https://download.opensuse.org/repositories/home:/flowkeeper/Fedora_43/noarch/flowkeeper-1.0.2-2.1.noarch.rpm
       - title: AppImage
-        asset: ubuntu-24-04-arm-nuitka-appimage
+        asset: ubuntu-26-04-arm-nuitka-appimage
         size: N/A
         type: file
         href: "#"
       - title: All-in-one native binary
-        asset: ubuntu-24-04-arm-nuitka-portable
+        asset: ubuntu-26-04-arm-nuitka-portable
         size: N/A
         type: file
         href: "#" 
@@ -235,6 +258,8 @@ downloads:
         display: Ubuntu 22.04, ARM
       - name: ubuntu-24.04-arm
         display: Ubuntu 24.04, ARM
+      - name: ubuntu-26.04-arm
+        display: Ubuntu 26.04, ARM
     more_artifact:
       - name: nuitka-package.deb
         display: DEB "fat" package, Nuitka

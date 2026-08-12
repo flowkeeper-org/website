@@ -18,7 +18,7 @@ content : |
 buttons:
   primary:
     label : "Download"
-    link : "#download"
+    link : "#downloads-title"
   secondary:
     label : "Contribute"
     link : "https://github.com/flowkeeper-org/fk-desktop/tree/rc-1.1.0?tab=contributing-ov-file"
