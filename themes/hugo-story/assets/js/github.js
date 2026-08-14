@@ -11,7 +11,7 @@
 		moreTable.hide();
 	});
 
-        fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/370767396")
+        fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/370824683")
 	//fetch("https://api.github.com/repos/flowkeeper-org/fk-desktop/releases/latest")
 		.then(resp => resp.json())
 		.then(json => {
