@@ -111,6 +111,9 @@ downloads:
       - title: Flowkeeper on Flathub
         type: link
         href: https://flathub.org/apps/org.flowkeeper.Flowkeeper
+      - title: Flowkeeper on Snapcraft
+        type: link
+        href: https://snapcraft.io/flowkeeper
       - type: shell
         content: |
           # Fedora 44
@@ -140,9 +143,6 @@ downloads:
 
           # Arch
           yay -Sa flowkeeper-bin
-      #- title: TODO: Flowkeeper on Snapcraft
-        #type: link
-        #href: http://example.com
       - title: Minimal DEB package (run 'apt install ./<filename>.deb')
         asset: ubuntu-26-04-pyinstaller-min-package-deb
         size: N/A

@@ -135,7 +135,7 @@ features:
         <li>Converted all audio resources to m4a format to reduce the number of bugreports associated with audio.</li>
         <li>Metadata on workitems and backlogs (huge enabler for future features!)</li>
         <li>New build configurations: Ubuntu 26.04, macOS 26 and Windows 11 ARM.</li>
-        <li>Snapcraft.io manifest.</li>
+        <li>Flowkeeper can now be found <a href="https://snapcraft.io/flowkeeper">Snapcraft</a>.</li>
       </ul>
       <p>Bug fixes</p>
       <ul>
