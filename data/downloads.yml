@@ -37,6 +37,10 @@ downloads:
         type: file
         href: "#"
         section: main
+      - type: shell
+        content: |
+          # Install via WinGet
+          winget install -e --id Flowkeeper.Flowkeeper
       #- title: Installation instructions
         #type: link
         #href: http://example.com
